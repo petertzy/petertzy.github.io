@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chapter 3</title>
+  <link rel="icon" type="image/png" href="../icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="area">
+    <audio id="audio" controls style="width: 95%;">
+      <source src="../audio/wonderfulwizardofoz_03_baum_64kb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div id="button">
+      <button class="button" id="playButton" onclick="playAudio()">play</button>
+      <button class="button" onclick="playPause()">pause</button>
+      <button class="button" onclick="prevSentence()">previous</button>
+      <button class="button" onclick="nextSentence()">next</button>
+      <button class="button" onclick="jumpToFirstSentence()">first</button>
+      <button class="button" onclick="jumpToLastSentence()">last</button>
+      <button id="shortcut">Shortcut: "Space": play/pause; ⬅️ ➡️ ⬆️ ⬇️ </button>
+      <a id="home" href="../index.html">Home</a>
+    </div>
+  </div>
+  <div class="transcript-container" id="transcript">
+    <p data-start="10" data-end="12.99999999" style="margin-left: 35%;">Chapter 3: How Dorothy Saved the Scarecrow</p>
+    <p data-start="10" data-end="12.99999999" style="margin-left: 35%;">第三章： 桃樂絲如何拯救稻草人</p>
+    <p data-start="13" data-end="17.99999999">When Dorothy was left alone she began to feel hungry.</p>
+    <p data-start="13" data-end="17.99999999">當桃樂絲獨自一人時，她開始感到飢餓。</p>
+    <p data-start="18" data-end="22.99999999">So she went to the cupboard and cut herself some bread, which she spread with butter.</p>
+    <p data-start="18" data-end="22.99999999">於是她走到櫥櫃前給自己切了一些麵包，並在上面塗上了黃油。</p>
+    <p data-start="23" data-end="31.99999999">She gave some to Toto, and taking a pail from the shelf she carried it down to the little brook and filled it with clear, sparkling water.</p>
+    <p data-start="23" data-end="31.99999999">她給了托託一些，然後從架子上拿起一個桶，把它帶到小溪邊，裝滿了清澈的、閃閃發光的水。</p>
+    <p data-start="32" data-end="36.99999999">Toto ran over to the trees and began to bark at the birds sitting there. </p>
+    <p data-start="32" data-end="36.99999999">托托跑到樹上，開始對著坐在那裡的鳥兒吠叫。</p>
+    <p data-start="37" data-end="47.99999999">Dorothy went to get him, and saw such delicious fruit hanging from the branches that she gathered some of it, finding it just what she wanted to help out her breakfast.</p>
+    <p data-start="37" data-end="47.99999999">桃樂絲去接他，看到樹枝上掛著這麼美味的水果，她就摘了一些，發現這正是她想要用來做早餐的。</p>
+    <p data-start="48" data-end="58.99999999">Then she went back to the house, and having helped herself and Toto to a good drink of the cool, clear water, she set about making ready for the journey to the City of Emeralds.</p>
+    <p data-start="48" data-end="58.99999999">然後她回到屋裡，幫自己和托托喝了一口清涼的清水，然後開始準備前往翡翠城的旅程。</p>
+    <p data-start="59" data-end="65.99999999">Dorothy had only one other dress, but that happened to be clean and was hanging on a peg beside her bed.</p>
+    <p data-start="59" data-end="65.99999999">桃樂絲只有另一件衣服，但那件衣服剛好是乾淨的，掛在床邊的釘子上。</p>
+    <p data-start="66" data-end="75.99999999">It was gingham, with checks of white and blue; and although the blue was somewhat faded with many washings, it was still a pretty frock.</p>
+    <p data-start="66" data-end="75.99999999">它是格子布的，上面有白色和藍色的格子。 雖然藍色由於多次洗滌而有些褪色，但它仍然是一件漂亮的連身裙。</p>
+    <p data-start="76" data-end="82.99999999">The girl washed herself carefully, dressed herself in the clean gingham, and tied her pink sunbonnet on her head.</p>
+    <p data-start="76" data-end="82.99999999">女孩仔細地洗了澡，穿上乾淨的格子連身裙，把粉紅色的遮陽帽戴在頭上。</p>
+    <p data-start="83" data-end="88.99999999">She took a little basket and filled it with bread from the cupboard, laying a white cloth over the top.</p>
+    <p data-start="83" data-end="88.99999999">她拿了一個小籃子，裝滿了櫃子裡的麵包，上面蓋了一塊白布。</p>
+    <p data-start="89" data-end="93.99999999">Then she looked down at her feet and noticed how old and worn her shoes were.</p>
+    <p data-start="89" data-end="93.99999999">然後她低頭看著自己的腳，發現她的鞋子有多舊、有多破。</p>
+    <p data-start="94" data-end="98.99999999">"They surely will never do for a long journey, Toto," she said.</p>
+    <p data-start="94" data-end="98.99999999">「托托，它們肯定不適合長途旅行，」她說。</p>
+    <p data-start="99" data-end="106.99999999">And Toto looked up into her face with his little black eyes and wagged his tail to show he knew what she meant.</p>
+    <p data-start="99" data-end="106.99999999">托托用他的小黑眼睛看著她的臉，搖著尾巴表示他知道她的意思。</p>
+    <p data-start="107" data-end="113.99999999">At that moment Dorothy saw lying on the table the silver shoes that had belonged to the Witch of the East.</p>
+    <p data-start="107" data-end="113.99999999">就在這時，桃樂絲看到桌上放著東方女巫的銀鞋。</p>
+    <p data-start="114" data-end="122.99999999">"I wonder if they will fit me," she said to Toto. "They would be just the thing to take a long walk in, for they could not wear out."</p>
+    <p data-start="114" data-end="122.99999999">「我想知道它們是否適合我，」她對托託說。 「它們非常適合長時間散步，因為它們不會磨損。」</p>
+    <p data-start="123" data-end="130.99999999">She took off her old leather shoes and tried on the silver ones, which fitted her as well as if they had been made for her.</p>
+    <p data-start="123" data-end="130.99999999">她脫下舊皮鞋，試穿銀色的鞋子，非常合腳，就像是為她量身訂做的一樣。</p>
+    <p data-start="131" data-end="141.99999999">Finally she picked up her basket. "Come along, Toto," she said. "We will go to the Emerald City and ask the Great Oz how to get back to Kansas again."</p>
+    <p data-start="131" data-end="141.99999999">最後她拿起了她的籃子。「來吧，托托，」她說。 「我們將前往翡翠城，詢問偉大的綠野仙蹤如何再次返回堪薩斯州。」</p>
+    <p data-start="142" data-end="152.99999999">She closed the door, locked it, and put the key carefully in the pocket of her dress. And so, with Toto trotting along soberly behind her, she started on her journey.</p>
+    <p data-start="142" data-end="152.99999999">她關上門，鎖上，然後小心翼翼地將鑰匙放進衣服口袋。 於是，托託在她身後清醒地小跑步著，她開始了她的旅程。</p>
+    <p data-start="153" data-end="168.99999999">There were several roads nearby, but it did not take her long to find the one paved with yellow bricks. Within a short time she was walking briskly toward the Emerald City, her silver shoes tinkling merrily on the hard, yellow road- bed.</p>
+    <p data-start="153" data-end="168.99999999">附近有好幾條路，但沒多久，她就找到了一條黃磚鋪成的路。 不一會兒，她就快步朝翡翠城走去，銀色的鞋子在堅硬的黃色路基上發出歡快的叮噹聲。</p>
+    <p data-start="169" data-end="184.99999999">The sun shone bright and the birds sang sweetly, and Dorothy did not feel nearly so bad as you might think a little girl would who had been suddenly whisked away from her own country and set down in the midst of a strange land.</p>
+    <p data-start="169" data-end="184.99999999">陽光燦爛，鳥兒甜美地歌唱，桃樂絲的感覺並不像你想像的一個小女孩突然離開自己的祖國，來到一片陌生的土地上那樣難過。</p>
+    <p data-start="185" data-end="189.99999999">She was surprised, as she walked along, to see how pretty the country was about her.</p>
+    <p data-start="185" data-end="189.99999999">當她走著走著，她很驚訝地發現她周圍的國家是多麼美麗。</p>
+    <p data-start="190" data-end="198.99999999">There were neat fences at the sides of the road, painted a dainty blue color, and beyond them were fields of grain and vegetables in abundance.</p>
+    <p data-start="190" data-end="198.99999999">路邊有整齊的柵欄，柵欄漆成優雅的藍色，柵欄後方是大片的糧田和蔬菜。</p>
+    <p data-start="199" data-end="203.99999999">Evidently the Munchkins were good farmers and able to raise large crops.</p>
+    <p data-start="199" data-end="203.99999999">顯然，曼奇金人是優秀的農民，能夠種植大量農作物。</p>
+    <p data-start="204" data-end="218.99999999">Once in a while she would pass a house, and the people came out to look at her and bow low as she went by; for everyone knew she had been the means of destroying the Wicked Witch and setting them free from bondage.</p>
+    <p data-start="204" data-end="218.99999999">偶爾她會經過一座房子，屋裡的人們會出來看著她，當她經過時低頭致意；因為每個人都知道她曾經摧毀了邪惡女巫，讓他們從奴役中解脫出來。</p>
+    <p data-start="219" data-end="226.99999999">The houses of the Munchkins were odd-looking dwellings, for each was round, with a big dome for a roof.</p>
+    <p data-start="219" data-end="226.99999999">曼奇金人的房子看起來很奇怪，因為每棟都是圓形的，有一個大圓頂屋頂。</p>
+    <p data-start="227" data-end="231.99999999">All were painted blue, for in this country of the East blue was the favorite color.</p>
+    <p data-start="227" data-end="231.99999999">所有東西都漆成藍色，因為在這個東方國家，藍色是人們最喜歡的顏色。</p>
+    <p data-start="232" data-end="241.99999999">Toward evening, when Dorothy was tired with her long walk and began to wonder where she should pass the night, she came to a house rather larger than the rest.</p>
+    <p data-start="232" data-end="241.99999999">傍晚時分，當桃樂絲長途跋涉感到疲倦並開始考慮該在哪裡過夜時，她來到了一所比其他房子大得多的房子前。</p>
+    <p data-start="242" data-end="245.99999999">On the green lawn before it many men and women were dancing. </p>
+    <p data-start="242" data-end="245.99999999">前面的綠色草坪上，許多男人和女人正在跳舞。</p>
+    <p data-start="246" data-end="259.99999999">Five little fiddlers played as loudly as possible, and the people were laughing and singing, while a big table near by was loaded with delicious fruits and nuts, pies and cakes, and many other good things to eat.</p>
+    <p data-start="246" data-end="259.99999999">五個小小提琴手盡可能大聲地演奏，人們又笑又唱，附近的一張大桌子上擺滿了美味的水果和堅果、餡餅和蛋糕，以及許多其他好吃的東西。</p>
+    <p data-start="260" data-end="265.99999999">The people greeted Dorothy kindly, and invited her to supper and to pass the night with them;</p>
+    <p data-start="260" data-end="265.99999999">人們親切地向桃樂絲打招呼，邀請她共進晚餐並與他們一起過夜。</p>
+    <p data-start="266" data-end="274.99999999">for this was the home of one of the richest Munchkins in the land, and his friends were gathered with him to celebrate their freedom from the bondage of the Wicked Witch.</p>
+    <p data-start="266" data-end="274.99999999">因為這是這片土地上最富有的芒奇金人之一的家，他的朋友們和他一起慶祝他們擺脫了邪惡女巫的束縛。</p>
+    <p data-start="275" data-end="281.99999999">Dorothy ate a hearty supper and was waited upon by the rich Munchkin himself, whose name was Boq.</p>
+    <p data-start="275" data-end="281.99999999">桃樂絲吃了一頓豐盛的晚餐，招待的是富有的芒奇金人，他的名字叫博克。</p>
+    <p data-start="282" data-end="285.99999999">Then she sat upon a settee and watched the people dance.</p>
+    <p data-start="282" data-end="285.99999999">然後她坐在長椅上，看著人們跳舞。</p>
+    <p data-start="286" data-end="290.99999999">When Boq saw her silver shoes he said, "You must be a great sorceress."</p>
+    <p data-start="286" data-end="290.99999999">當博克看到她的銀色鞋子時，他說：「你一定是一位偉大的女巫。」</p>
+    <p data-start="291" data-end="292.99999999">"Why?" asked the girl.</p>
+    <p data-start="291" data-end="292.99999999">“為什麼？” 女孩問。</p>
+    <p data-start="293" data-end="296.99999999">"Because you wear silver shoes and have killed the Wicked Witch.</p>
+    <p data-start="293" data-end="296.99999999">「因為你穿著銀鞋並且殺死了邪惡的女巫。</p>
+    <p data-start="297" data-end="303.99999999">Besides, you have white in your frock, and only witches and sorceresses wear white."</p>
+    <p data-start="297" data-end="303.99999999">此外，你的連身裙是白色的，只有女巫和女術士才穿白色的。」</p>
+    <p data-start="304" data-end="308.99999999">"My dress is blue and white checked," said Dorothy, smoothing out the wrinkles in it.</p>
+    <p data-start="304" data-end="308.99999999">「我的裙子是藍白格子的，」桃樂絲一邊說，一邊撫平裙子上的皺紋。</p>
+    <p data-start="309" data-end="317.99999999">"It is kind of you to wear that," said Boq. "Blue is the color of the Munchkins, and white is the witch color. So we know you are a friendly witch."</p>
+    <p data-start="309" data-end="317.99999999">「你穿這件衣服真是太好了，」博克說。 「藍色是曼基金人的顏色，白色是女巫的顏色。所以我們知道你是一個友好的女巫。」</p>
+    <p data-start="318" data-end="332.99999999">Dorothy did not know what to say to this, for all the people seemed to think her a witch, and she knew very well she was only an ordinary little girl who had come by the chance of a cyclone into a strange land.</p>
+    <p data-start="318" data-end="332.99999999">對此，桃樂絲不知道該說些什麼，因為所有人似乎都認為她是個女巫，她很清楚自己只是一個普通的小女孩，因一場龍卷風的偶然來到了陌生的土地。</p>
+    <p data-start="333" data-end="340.99999999">When she had tired watching the dancing, Boq led her into the house, where he gave her a room with a pretty bed in it.</p>
+    <p data-start="333" data-end="340.99999999">當她看累了跳舞時，博克帶她進屋，給了她一間房間，裡面有一張漂亮的床。</p>
+    <p data-start="341" data-end="349.99999999">The sheets were made of blue cloth, and Dorothy slept soundly in them till morning, with Toto curled up on the blue rug beside her.</p>
+    <p data-start="341" data-end="349.99999999">床單是藍色的，桃樂絲在上面睡得很香，直到早上，托托蜷縮在她旁邊的藍色地毯上。</p>
+    <p data-start="350" data-end="360.99999999">She ate a hearty breakfast, and watched a wee Munchkin baby, who played with Toto and pulled his tail and crowed and laughed in a way that greatly amused Dorothy. </p>
+    <p data-start="350" data-end="360.99999999">她吃了一頓豐盛的早餐，看著一個小芒奇金寶寶，它和托託一起玩耍，拉著尾巴，啼叫著，笑起來，這讓桃樂絲非常開心。</p>
+    <p data-start="361" data-end="366.99999999">Toto was a fine curiosity to all the people, for they had never seen a dog before.</p>
+    <p data-start="361" data-end="366.99999999">托託對所有人來說都是一個很讓人好奇的動物，因為他們以前從未見過狗。</p>
+    <p data-start="367" data-end="369.99999999">"How far is it to the Emerald City?" the girl asked.</p>
+    <p data-start="367" data-end="369.99999999">“這裡距離翡翠城還有多遠？” 女孩問。</p>
+    <p data-start="370" data-end="374.99999999">"I do not know," answered Boq gravely, "for I have never been there.</p>
+    <p data-start="370" data-end="374.99999999">「我不知道，」博克嚴肅地回答，「因為我從來沒有去過那裡。</p>
+    <p data-start="375" data-end="380.99999999">It is better for people to keep away from Oz, unless they have business with him.</p>
+    <p data-start="375" data-end="380.99999999">人們最好遠離奧茲，除非他們和他有生意往來。</p>
+    <p data-start="381" data-end="385.99999999">But it is a long way to the Emerald City, and it will take you many days. </p>
+    <p data-start="381" data-end="385.99999999">但到翡翠城的路途遙遠，需要很多天的時間。</p>
+    <p data-start="386" data-end="394.99999999">The country here is rich and pleasant, but you must pass through rough and dangerous places before you reach the end of your journey."</p>
+    <p data-start="386" data-end="394.99999999">這裡的國家富饒而宜人，但在到達旅程的終點之前，你必須經過崎嶇而危險的地方。”</p>
+    <p data-start="395" data-end="405.99999999">This worried Dorothy a little, but she knew that only the Great Oz could help her get to Kansas again, so she bravely resolved not to turn back.</p>
+    <p data-start="395" data-end="405.99999999">這讓桃樂絲有些擔心，但她知道只有偉大的奧茲才能幫助她再次到達堪薩斯，所以她勇敢地決定不再回頭。</p>
+    <p data-start="406" data-end="410.99999999">She bade her friends good-bye, and again started along the road of yellow brick.</p>
+    <p data-start="406" data-end="410.99999999">她告別了朋友們，又沿著黃磚路出發了。</p>
+    <p data-start="411" data-end="418.99999999">When she had gone several miles she thought she would stop to rest, and so climbed to the top of the fence beside the road and sat down.</p>
+    <p data-start="411" data-end="418.99999999">走了幾里路，她想停下來休息一下，就爬到路邊的柵欄頂坐下。</p>
+    <p data-start="419" data-end="428.99999999">There was a great cornfield beyond the fence, and not far away she saw a Scarecrow, placed high on a pole to keep the birds from the ripe corn.</p>
+    <p data-start="419" data-end="428.99999999">柵欄外有一片大玉米地，不遠處她看到一個稻草人，高高地放在一根桿子上，以防止鳥兒接觸成熟的玉米。</p>
+    <p data-start="429" data-end="433.99999999">Dorothy leaned her chin upon her hand and gazed thoughtfully at the Scarecrow.</p>
+    <p data-start="429" data-end="433.99999999">桃樂絲用手撐著下巴，若有所思地看著稻草人。</p>
+    <p data-start="434" data-end="440.99999999">Its head was a small sack stuffed with straw, with eyes, nose, and mouth painted on it to represent a face.</p>
+    <p data-start="434" data-end="440.99999999">它的頭是一個塞滿稻草的小麻袋，上面畫著眼睛、鼻子和嘴巴，代表著一張臉。</p>
+    <p data-start="441" data-end="453.99999999">An old, pointed blue hat, that had belonged to some Munchkin, was perched on his head, and the rest of the figure was a blue suit of clothes, worn and faded, which had also been stuffed with straw.</p>
+    <p data-start="441" data-end="453.99999999">他的頭上戴著一頂舊的尖頂藍色帽子，那是某個曼奇金人的東西，而人物的其餘部分則是一套藍色的衣服，破舊褪色，裡面也塞滿了稻草。</p>
+    <p data-start="454" data-end="464.99999999">On the feet were some old boots with blue tops, such as every man wore in this country, and the figure was raised above the stalks of corn by means of the pole stuck up its back.</p>
+    <p data-start="454" data-end="464.99999999">腳上穿著一雙藍色鞋頭的舊靴子，就像這個國家每個男人都穿的那樣，這個角色透過背上豎起的桿子被舉在玉米稈上方。</p>
+    <p data-start="465" data-end="475.99999999">While Dorothy was looking earnestly into the queer, painted face of the Scarecrow, she was surprised to see one of the eyes slowly wink at her.</p>
+    <p data-start="465" data-end="475.99999999">當桃樂絲認真地看著稻草人那張奇怪的、塗著顏色的臉時，她驚訝地發現其中一隻眼睛慢慢地向她眨眼。</p>
+    <p data-start="476" data-end="481.99999999">She thought she must have been mistaken at first, for none of the scarecrows in Kansas ever wink;</p>
+    <p data-start="476" data-end="481.99999999">她以為自己一開始一定是搞錯了，因為堪薩斯州的稻草人從來不眨眼。</p>
+    <p data-start="482" data-end="486.99999999">but presently the figure nodded its head to her in a friendly way.</p>
+    <p data-start="482" data-end="486.99999999">但很快那個稻草人友善地向她點了點頭。</p>
+    <p data-start="487" data-end="492.99999999">Then she climbed down from the fence and walked up to it, while Toto ran around the pole and barked.</p>
+    <p data-start="487" data-end="492.99999999">然後她從柵欄上爬下來，朝柵欄走去，而托托則繞著柵欄跑去並吠叫。</p>
+    <p data-start="493" data-end="496.99999999">"Good day," said the Scarecrow, in a rather husky voice.</p>
+    <p data-start="493" data-end="496.99999999">「你好，」稻草人用沙啞的聲音說。</p>
+    <p data-start="497" data-end="499.99999999">"Did you speak?" asked the girl, in wonder.</p>
+    <p data-start="497" data-end="499.99999999">“你說話了？” 女孩驚奇地問。</p>
+    <p data-start="500" data-end="503.99999999">"Certainly," answered the Scarecrow. "How do you do?"</p>
+    <p data-start="500" data-end="503.99999999">「當然，」稻草人回答。「你好嗎？」</p>
+    <p data-start="504" data-end="508.99999999">"I'm pretty well, thank you," replied Dorothy politely. "How do you do?"</p>
+    <p data-start="504" data-end="508.99999999">「我很好，謝謝你。」桃樂絲禮貌地回答。「你好嗎？」</p>
+    <p data-start="509" data-end="518.99999999">"I'm not feeling well," said the Scarecrow, with a smile, "for it is very tedious being perched up here night and day to scare away crows."</p>
+    <p data-start="509" data-end="518.99999999">「我感覺不太舒服，」稻草人微笑著說，「日日夜夜地守在這兒嚇走烏鴉，實在是太乏味了。」</p>
+    <p data-start="519" data-end="521.99999999">"Can't you get down?" asked Dorothy.</p>
+    <p data-start="519" data-end="521.99999999">「你不能下來嗎？」桃樂絲問。</p>
+    <p data-start="522" data-end="529.99999999">"No, for this pole is stuck up my back. If you will please take away the pole I shall be greatly obliged to you."</p>
+    <p data-start="522" data-end="529.99999999">「不，因為這根桿子插在我的背上。如果你願意，請把桿子拿走，我將非常感激你。」</p>
+    <p data-start="530" data-end="538.99999999">Dorothy reached up both arms and lifted the figure off the pole, for, being stuffed with straw, it was quite light.</p>
+    <p data-start="530" data-end="538.99999999">桃樂絲伸出雙臂，將人影從柱子上抬起來，因為裡面塞滿了稻草，所以很輕。</p>
+    <p data-start="539" data-end="544.99999999">"Thank you very much," said the Scarecrow, when he had been set down on the ground. "I feel like a new man."</p>
+    <p data-start="539" data-end="544.99999999">「非常感謝，」稻草人被放在地上後說道。「我感覺自己好像獲得新生了。」</p>
+    <p data-start="545" data-end="554.99999999">Dorothy was puzzled at this, for it sounded queer to hear a stuffed man speak, and to see him bow and walk along beside her.</p>
+    <p data-start="545" data-end="554.99999999">桃樂絲對此感到困惑，因為聽到一個毛絨玩具人說話，看到他鞠躬並走在她身邊，聽起來很奇怪。</p>
+    <p data-start="555" data-end="560.99999999">"Who are you?" asked the Scarecrow when he had stretched himself and yawned. "And where are you going?"</p>
+    <p data-start="555" data-end="560.99999999">「你是誰？」稻草人伸了個懶腰，打了個哈欠，問。 「那你要去哪裡？」</p>
+    <p data-start="561" data-end="570.99999999">"My name is Dorothy," said the girl, "and I am going to the Emerald City, to ask the Great Oz to send me back to Kansas."</p>
+    <p data-start="561" data-end="570.99999999">「我叫桃樂絲，」女孩說道，「我要去翡翠城，請求偉大的奧茲將我送回堪薩斯州。」</p>
+    <p data-start="571" data-end="575.99999999">"Where is the Emerald City?" he inquired. "And who is Oz?"</p>
+    <p data-start="571" data-end="575.99999999">「翡翠城在哪裡？」 他問。 「奧茲是誰？」</p>
+    <p data-start="576" data-end="579.99999999">"Why, don't you know?" she returned, in surprise.</p>
+    <p data-start="576" data-end="579.99999999">「為什麼，你不知道嗎？」 她驚訝地回覆道。</p>
+    <p data-start="580" data-end="588.99999999">"No, indeed. I don't know anything. You see, I am stuffed, so I have no brains at all," he answered sadly.</p>
+    <p data-start="580" data-end="588.99999999">「不，確實。我什麼都不知道。你看，我身上塞滿了稻草，所以我根本沒有大腦，」他悲傷地回答。</p>
+    <p data-start="589" data-end="593.99999999">"Oh," said Dorothy, "I'm awfully sorry for you."</p>
+    <p data-start="589" data-end="593.99999999">「噢，」桃樂絲說，「我真為你感到難過。」</p>
+    <p data-start="594" data-end="600.99999999">"Do you think," he asked, "if I go to the Emerald City with you, that Oz would give me some brains?"</p>
+    <p data-start="594" data-end="600.99999999">「你覺得，」他問道，「如果我和你一起去翡翠城，奧茲會給我大腦嗎？」</p>
+    <p data-start="601" data-end="610.99999999">"I cannot tell," she returned, "but you may come with me, if you like. If Oz will not give you any brains you will be no worse off than you are now."</p>
+    <p data-start="601" data-end="610.99999999">「我不知道，」她回答道，「但如果你願意的話，你可以跟我一起去。如果奧茲不給你大腦，你的處境不會比現在更糟。」</p>
+    <p data-start="611" data-end="623.99999999">"That is true," said the Scarecrow. "You see," he continued confidentially, "I don't mind my legs and arms and body being stuffed, because I cannot get hurt.</p>
+    <p data-start="611" data-end="623.99999999">「確實如此，」稻草人說。 「你看，」他秘密地繼續說道，「我不介意我的腿、手臂和身體被塞住，因為我不會受傷。</p>
+    <p data-start="624" data-end="643.99999999">If anyone treads on my toes or sticks a pin into me, it doesn't matter, for I can't feel it. But I do not want people to call me a fool, and if my head stays stuffed with straw instead of with brains, as yours is, how am I ever to know anything?"</p>
+    <p data-start="624" data-end="643.99999999">如果有人踩到我的腳趾或用針刺我，那也沒關係，因為我感覺不到。 但我不想讓人們稱我為傻瓜，如果我的腦袋裡塞滿了稻草而不是像你一樣的大腦，我怎麼能知道任何事情呢？」</p>
+    <p data-start="644" data-end="656.99999999">"I understand how you feel," said the little girl, who was truly sorry for him. "If you will come with me I'll ask Oz to do all he can for you.""Thank you," he answered gratefully.</p>
+    <p data-start="644" data-end="656.99999999">「我理解你的心情。」小女孩真心為他感到難過。「如果你願意跟我一起去，我會請奧茲為你竭盡全力。」「謝謝。」他感激地回答。</p>
+    <p data-start="657" data-end="665.99999999">They walked back to the road. Dorothy helped him over the fence, and they started along the path of yellow brick for the Emerald City.</p>
+    <p data-start="657" data-end="665.99999999">他們走迴路上。 桃樂絲幫他翻過柵欄，他們沿著黃磚小路出發，前往翡翠城。</p>
+    <p data-start="666" data-end="680.99999999">Toto did not like this addition to the party at first. He smelled around the stuffed man as if he suspected there might be a nest of rats in the straw, and he often growled in an unfriendly way at the Scarecrow.</p>
+    <p data-start="666" data-end="680.99999999">托託一開始並不喜歡這個新夥伴。 他在毛絨玩具周圍聞了聞，好像懷疑稻草裡可能有一窩老鼠，而且他經常對稻草人不友善地咆哮。</p>
+    <p data-start="681" data-end="685.99999999">"Don't mind Toto," said Dorothy to her new friend. "He never bites."</p>
+    <p data-start="681" data-end="685.99999999">「別介意托托，」桃樂絲對她的新朋友說。 「他從不咬人。」</p>
+    <p data-start="686" data-end="692.99999999">"Oh, I'm not afraid," replied the Scarecrow. "He can't hurt the straw. Do let me carry that basket for you. </p>
+    <p data-start="686" data-end="692.99999999">「噢，我不怕。」稻草人回答。 「他傷不到稻草。讓我幫你拿那個籃子吧。</p>
+    <p data-start="693" data-end="704.99999999">I shall not mind it, for I can't get tired. I'll tell you a secret," he continued, as he walked along. "There is only one thing in the world I am afraid of."</p>
+    <p data-start="693" data-end="704.99999999">我不會介意的，因為我不會累。 我告訴你一個秘密，」他邊走邊繼續說道，「世界上只有一件事讓我害怕。」</p>
+    <p data-start="705" data-end="714.99999999">"What is that?" asked Dorothy; "the Munchkin farmer who made you?" "No," answered the Scarecrow; "it's a lighted match."</p>
+    <p data-start="705" data-end="714.99999999">「那是什麼？」 桃樂絲問； 「創造你的曼奇金農夫？」 「不，」稻草人回答。 「這是一根點燃的火柴。」</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chapter 4</title>
+  <link rel="icon" type="image/png" href="../icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="area">
+    <audio id="audio" controls style="width: 95%;">
+      <source src="../audio/wonderfulwizardofoz_04_baum_64kb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div id="button">
+      <button class="button" id="playButton" onclick="playAudio()">play</button>
+      <button class="button" onclick="playPause()">pause</button>
+      <button class="button" onclick="prevSentence()">previous</button>
+      <button class="button" onclick="nextSentence()">next</button>
+      <button class="button" onclick="jumpToFirstSentence()">first</button>
+      <button class="button" onclick="jumpToLastSentence()">last</button>
+      <button id="shortcut">Shortcut: "Space": play/pause; ⬅️ ➡️ ⬆️ ⬇️ </button>
+      <a id="home" href="../index.html">Home</a>
+    </div>
+  </div>
+  <div class="transcript-container" id="transcript">
+    <p data-start="9" data-end="12.99999999" style="margin-left: 35%;">Chapter 4: The Road Through the Forest</p>
+    <p data-start="9" data-end="12.99999999" style="margin-left: 35%;">第四章: 穿過森林的路</p>
+    <p data-start="13" data-end="22.99999999">After a few hours the road began to be rough, and the walking grew so difficult that the Scarecrow often stumbled over the yellow bricks, which were here very uneven.</p>
+    <p data-start="13" data-end="22.99999999">幾個小時後，路開始變得崎嶇不平，行走變得越來越困難，稻草人經常被黃磚絆倒，這裡的黃磚非常凹凸不平。</p>
+    <p data-start="23" data-end="31.99999999">Sometimes, indeed, they were broken or missing altogether, leaving holes that Toto jumped across and Dorothy walked around.</p>
+    <p data-start="23" data-end="31.99999999">實際上，有時它們是破損的，或者完全不存在，留下洞，托托會跳過去，而桃樂絲則會繞過去。</p>
+    <p data-start="32" data-end="41.99999999">As for the Scarecrow, having no brains, he walked straight ahead, and so stepped into the holes and fell at full length on the hard bricks.</p>
+    <p data-start="32" data-end="41.99999999">至於稻草人，沒有腦子，徑直往前走，結果一腳踩進了洞裡，整個人摔在了堅硬的磚塊上。</p>
+    <p data-start="42" data-end="51.99999999">It never hurt him, however, and Dorothy would pick him up and set him upon his feet again, while he joined her in laughing merrily at his own mishap.</p>
+    <p data-start="42" data-end="51.99999999">然而，這並沒有傷害到他，桃樂絲會把他抱起來，讓他重新站起來，而他則和她一起為自己的不幸而開心地大笑。</p>
+    <p data-start="52" data-end="64.99999999">The farms were not nearly so well cared for here as they were farther back. There were fewer houses and fewer fruit trees, and the farther they went the more dismal and lonesome the country became.</p>
+    <p data-start="52" data-end="64.99999999">這裡的農場不像之前遠方的地方那樣受到很好的照顧。 房屋越來越少，果樹也越來越少，越往前走，鄉村就越荒涼、荒涼。</p>
+    <p data-start="65" data-end="76.99999999">At noon they sat down by the roadside, near a little brook, and Dorothy opened her basket and got out some bread. She offered a piece to the Scarecrow, but he refused.</p>
+    <p data-start="65" data-end="76.99999999">中午，他們坐在路邊，靠近一條小溪，桃樂絲打開籃子，拿出一些麵包。 她向稻草人提供了一塊，但稻草人拒絕了。</p>
+    <p data-start="77" data-end="91.99999999">"I am never hungry," he said, "and it is a lucky thing I am not, for my mouth is only painted, and if I should cut a hole in it so I could eat, the straw I am stuffed with would come out, and that would spoil the shape of my head."</p>
+    <p data-start="77" data-end="91.99999999">「我從來不餓，」他說，「幸運的是我不餓，因為我的嘴只是塗了油漆，如果我在上面切一個洞以便我可以吃東西，我塞進去的稻草就會過來出去，這會破壞我頭部的形狀。」</p>
+    <p data-start="92" data-end="98.99999999">Dorothy saw at once that this was true, so she only nodded and went on eating her bread.</p>
+    <p data-start="92" data-end="98.99999999">桃樂絲立刻明白這是真的，所以她只是點點頭，繼續吃麵包。</p>
+    <p data-start="99" data-end="114.99999999">"Tell me something about yourself and the country you came from," said the Scarecrow, when she had finished her dinner. So she told him all about Kansas, and how gray everything was there, and how the cyclone had carried her to this queer Land of Oz.</p>
+    <p data-start="99" data-end="114.99999999">「告訴我一些關於你自己和你來自的國家的事，」稻草人吃完晚餐後說道。 於是她向他講述了堪薩斯的一切，告訴他那裡的一切是多麼的灰色，以及旋風如何將她帶到了這片奇怪的奧茲國。</p>
+    <p data-start="115" data-end="126.99999999">The Scarecrow listened carefully, and said, "I cannot understand why you should wish to leave this beautiful country and go back to the dry, gray place you call Kansas."</p>
+    <p data-start="115" data-end="126.99999999">稻草人認真地聽著，說：「我不明白你為什麼要離開這個美麗的國家，回到那個乾燥、灰色的你稱之為堪薩斯的地方。」</p>
+    <p data-start="127" data-end="142.99999999">"That is because you have no brains" answered the girl. "No matter how dreary and gray our homes are, we people of flesh and blood would rather live there than in any other country, be it ever so beautiful. There is no place like home."</p>
+    <p data-start="127" data-end="142.99999999">「那是因為你沒有腦子。」女孩回答。「無論我們的家園多麼沉悶和灰暗，我們有血有肉的人都寧願住在那裡，也不願生活在任何其他國家，無論它多麼美麗。沒有一個地方像家一樣。」</p>
+    <p data-start="143" data-end="148.99999999">The Scarecrow sighed."Of course I cannot understand it," he said.</p>
+    <p data-start="143" data-end="148.99999999">稻草人嘆了口氣。「我當然無法理解，」他說。</p>
+    <p data-start="149" data-end="162.99999999">"If your heads were stuffed with straw, like mine, you would probably all live in the beautiful places, and then Kansas would have no people at all. It is fortunate for Kansas that you have brains."</p>
+    <p data-start="149" data-end="162.99999999">「如果你們的腦袋裡塞滿了稻草，就像我一樣，你們可能都會住在美麗的地方，然後堪薩斯州就根本沒有人了。堪薩斯州很幸運，因為你們有大腦。」</p>
+    <p data-start="163" data-end="170.99999999">"Won't you tell me a story, while we are resting?" asked the child. The Scarecrow looked at her reproachfully, and answered:</p>
+    <p data-start="163" data-end="170.99999999">「趁我們休息的時候，你給我講個故事好嗎？」孩子問。 稻草人責備地看著她，回答：</p>
+    <p data-start="171" data-end="191.99999999">"My life has been so short that I really know nothing whatever. I was only made day before yesterday. What happened in the world before that time is all unknown to me. Luckily, when the farmer made my head, one of the first things he did was to paint my ears, so that I heard what was going on. </p>
+    <p data-start="171" data-end="191.99999999">「我的生命如此短暫，我真的什麼都不知道。我是前天才被造出來的。在那之前世界上發生過什麼，我一無所知。幸運的是，當農夫製作我的頭時，最先做的事情之一就是他所做的就是在我的耳朵上畫畫，這樣我就能聽到發生了什麼。</p>
+    <p data-start="192" data-end="201.99999999">There was another Munchkin with him, and the first thing I heard was the farmer saying, 'How do you like those ears?'"'They aren't straight,'" answered the other.</p>
+    <p data-start="192" data-end="201.99999999">和他在一起的還有另一隻曼奇金人，我聽到的第一句話是農夫說，『你覺得那些耳朵怎麼樣？』「『它們不是直的，』」另一個回答。</p>
+    <p data-start="202" data-end="206.99999999">"'Never mind,'" said the farmer. "'They are ears just the same,'" which was true enough.</p>
+    <p data-start="202" data-end="206.99999999">「『沒關係，』」農夫說。 「『它們都是一樣的耳朵，』」它們足夠逼真了。</p>
+    <p data-start="207" data-end="223.99999999">"'Now I'll make the eyes,'" said the farmer. So he painted my right eye, and as soon as it was finished I found myself looking at him and at everything around me with a great deal of curiosity, for this was my first glimpse of the world.</p>
+    <p data-start="207" data-end="223.99999999">「現在我要做眼睛了，」農夫說。 於是他畫了我的右眼，一完成，我就發現自己帶著極大的好奇心看著他和周圍的一切，因為這是我第一次看到這個世界。</p>
+    <p data-start="224" data-end="231.99999999">"'That's a rather pretty eye,'" remarked the Munchkin who was watching the farmer. "'Blue paint is just the color for eyes.'</p>
+    <p data-start="224" data-end="231.99999999">「這是一隻相當漂亮的眼睛，」正在觀察農夫的曼奇金人說。「『藍色油漆正適合做眼睛的顏色。』</p>
+    <p data-start="232" data-end="242.99999999">"'I think I'll make the other a little bigger,'" said the farmer. And when the second eye was done I could see much better than before. Then he made my nose and my mouth.</p>
+    <p data-start="232" data-end="242.99999999">「我想我會把另一個做大一點，」農夫說。 當第二隻眼睛完成後，我的視力比以前好得多。 然後他做了我的鼻子和嘴巴。</p>
+    <p data-start="243" data-end="247.99999999">But I did not speak, because at that time I didn't know what a mouth was for.</p>
+    <p data-start="243" data-end="247.99999999">但我沒有說話，因為當時我不知道嘴巴是做什麼用的。</p>
+    <p data-start="248" data-end="262.99999999">I had the fun of watching them make my body and my arms and legs; and when they fastened on my head, at last, I felt very proud, for I thought I was just as good a man as anyone.</p>
+    <p data-start="248" data-end="262.99999999">我很高興地看著他們塑造我的身體、我的手臂和腿； 最後，當它們裝上我的頭部時，我感到非常自豪，因為我認為我和其他人一樣好。</p>
+    <p data-start="263" data-end="267.99999999">"'This fellow will scare the crows fast enough,' said the farmer. 'He looks just like a man.'</p>
+    <p data-start="263" data-end="267.99999999">「『這個傢伙足以嚇跑烏鴉，』農夫說。『他看起來就像一個人。』</p>
+    <p data-start="268" data-end="283.99999999">"'Why, he is a man,' said the other, and I quite agreed with him. The farmer carried me under his arm to the cornfield, and set me up on a tall stick, where you found me. He and his friend soon after walked away and left me alone.</p>
+    <p data-start="268" data-end="283.99999999">「『哎呀，他是個男人，』另一個人說道，我非常同意他的說法。那個農夫把我夾在腋下，帶到玉米田裡，把我放在一根高高的棍子上，你就在那裡找到了我。他和他的朋友不久之後就走開了，留下我一個人。</p>
+    <p data-start="284" data-end="301.99999999">"I did not like to be deserted this way. So I tried to walk after them. But my feet would not touch the ground, and I was forced to stay on that pole. It was a lonely life to lead, for I had nothing to think of, having been made such a little while before.</p>
+    <p data-start="284" data-end="301.99999999">「我不喜歡被這樣遺棄。於是我試著跟在他們後面走。但我的腳無法著地，我被迫留在那根柱子上。這是一種孤單的生活，因為我無所思考，因為我剛剛被製造出來不久。</p>
+    <p data-start="302" data-end="316.99999999">Many crows and other birds flew into the cornfield, but as soon as they saw me they flew away again, thinking I was a Munchkin; and this pleased me and made me feel that I was quite an important person.</p>
+    <p data-start="302" data-end="316.99999999">許多烏鴉和其他鳥兒飛進了玉米地，但它們一看到我，又飛走了，以為我是曼奇金人； 這讓我很高興，讓我覺得自己是個很重要的人。</p>
+    <p data-start="317" data-end="323.99999999">By and by an old crow flew near me, and after looking at me carefully he perched upon my shoulder and said:</p>
+    <p data-start="317" data-end="323.99999999">不久，一隻老烏鴉飛到我身邊，仔細地看了我一眼，停在我的肩膀上說：</p>
+    <p data-start="324" data-end="332.99999999">"'I wonder if that farmer thought to fool me in this clumsy manner. Any crow of sense could see that you are only stuffed with straw.'</p>
+    <p data-start="324" data-end="332.99999999">「『不知道那個農夫是不是想用這種笨拙的方式來愚弄我。任何有理智的烏鴉都能看出你只是用稻草塞滿的。』</p>
+    <p data-start="333" data-end="346.99999999">Then he hopped down at my feet and ate all the corn he wanted. The other birds, seeing he was not harmed by me, came to eat the corn too, so in a short time there was a great flock of them about me.</p>
+    <p data-start="333" data-end="346.99999999">然後他跳到我腳邊，吃掉了他想吃的所有玉米。 其他鳥兒見我沒有傷害他，也來吃玉米，不一會兒，我周圍就聚集了一大群。</p>
+    <p data-start="347" data-end="362.99999999">"I felt sad at this, for it showed I was not such a good Scarecrow after all; but the old crow comforted me, saying, 'If you only had brains in your head you would be as good a man as any of them, and a better man than some of them.</p>
+    <p data-start="347" data-end="362.99999999">「我對此感到難過，因為這表明我畢竟不是一個好稻草人；但是老烏鴉安慰我說：『如果你腦子裡有腦子，你就會像他們中的任何一個一樣好人，而且是一個比他們中的一些人更好的人。</p>
+    <p data-start="363" data-end="369.99999999">Brains are the only things worth having in this world, no matter whether one is a crow or a man.'</p>
+    <p data-start="363" data-end="369.99999999">大腦是這個世界上唯一值得擁有的東西，無論是烏鴉還是人類。”</p>
+    <p data-start="370" data-end="376.99999999">"After the crows had gone I thought this over, and decided I would try hard to get some brains.</p>
+    <p data-start="370" data-end="376.99999999">「烏鴉走後，我想了想，決定要努力獲取大腦。</p>
+    <p data-start="377" data-end="388.99999999">By good luck you came along and pulled me off the stake, and from what you say I am sure the Great Oz will give me brains as soon as we get to the Emerald City."</p>
+    <p data-start="377" data-end="388.99999999">幸運的是，你來了，把我從柱子上放了下來，從你所說的，我確信一旦我們到達翡翠城，偉大的奧茲一定會賜予我大腦。」</p>
+    <p data-start="389" data-end="393.99999999">"I hope so," said Dorothy earnestly, "since you seem anxious to have them."</p>
+    <p data-start="389" data-end="393.99999999">「我希望如此，」桃樂絲認真地說，「因為你看起來很想擁有大腦。」</p>
+    <p data-start="394" data-end="402.99999999">"Oh, yes; I am anxious," returned the Scarecrow. "It is such an uncomfortable feeling to know one is a fool."</p>
+    <p data-start="394" data-end="402.99999999">「哦，是的，我很著急，」稻草人回答。「知道自己是個傻瓜是一種很不舒服的感覺。」</p>
+    <p data-start="403" data-end="407.99999999">"Well," said the girl, "let us go." And she handed the basket to the Scarecrow.</p>
+    <p data-start="403" data-end="407.99999999">「好吧，」女孩說，「我們走吧。」 她把籃子遞給了稻草人。</p>
+    <p data-start="408" data-end="424.99999999">There were no fences at all by the roadside now, and the land was rough and untilled. Toward evening they came to a great forest, where the trees grew so big and close together that their branches met over the road of yellow brick.</p>
+    <p data-start="408" data-end="424.99999999">現在路邊沒有任何籬笆，土地粗糙且未耕種。傍晚時分，他們來到一片巨大的森林，樹木長得又高又密，它們的樹枝在黃磚路上交疊著。</p>
+    <p data-start="425" data-end="433.99999999">It was almost dark under the trees, for the branches shut out the daylight; but the travelers did not stop, and went on into the forest.</p>
+    <p data-start="425" data-end="433.99999999">樹下幾乎一片漆黑，因為樹枝擋住了陽光。 但旅行者並沒有停下來，繼續往森林裡走。</p>
+    <p data-start="434" data-end="446.99999999">"If this road goes in, it must come out," said the Scarecrow, "and as the Emerald City is at the other end of the road, we must go wherever it leads us.""Anyone would know that," said Dorothy.</p>
+    <p data-start="434" data-end="446.99999999">稻草人說：「如果這條路往裡面走，它一定會通向外面。而翡翠城就在這條路的另一端，所以我們必須走它帶我們去的任何地方。」桃樂絲說：「任何人都知道這一點。」</p>
+    <p data-start="447" data-end="454.99999999">"Certainly; that is why I know it," returned the Scarecrow. "If it required brains to figure it out, I never should have said it."</p>
+    <p data-start="447" data-end="454.99999999">「當然；這就是為什麼我知道的原因，」稻草人回答道。「如果需要大腦才能想出來，我就不應該說出來了。」</p>
+    <p data-start="455" data-end="462.99999999">After an hour or so the light faded away, and they found themselves stumbling along in the darkness.</p>
+    <p data-start="455" data-end="462.99999999">大約一個小時後，光芒漸漸消失，他們發現自己在黑暗中跌跌撞撞地前進。</p>
+    <p data-start="463" data-end="477.99999999">Dorothy could not see at all, but Toto could, for some dogs see very well in the dark; and the Scarecrow declared he could see as well as by day. So she took hold of his arm and managed to get along fairly well.</p>
+    <p data-start="463" data-end="477.99999999">桃樂絲完全看不見，但多多可以，因為一些狗在黑暗中看得很清楚；稻草人宣稱他能像白天一樣看得清楚。所以她抓住他的手臂，勉強能走得順利。</p>
+    <p data-start="478" data-end="486.99999999">"If you see any house, or any place where we can pass the night," she said, "you must tell me; for it is very uncomfortable walking in the dark."</p>
+    <p data-start="478" data-end="486.99999999">「如果你看到任何房子，或者任何我們可以過夜的地方，」她說，「你一定要告訴我，因為在黑暗中行走是非常不舒服的。」</p>
+    <p data-start="487" data-end="496.99999999">Soon after the Scarecrow stopped."I see a little cottage at the right of us," he said, "built of logs and branches. Shall we go there?"</p>
+    <p data-start="487" data-end="496.99999999">稻草人停下來後不久。「我看到我們右邊有一座小小屋，」他說，「是用木頭和樹枝建造的。我們要去那裡嗎？」</p>
+    <p data-start="497" data-end="509.99999999">"Yes, indeed," answered the child. "I am all tired out."So the Scarecrow led her through the trees until they reached the cottage, and Dorothy entered and found a bed of dried leaves in one corner.</p>
+    <p data-start="497" data-end="509.99999999">「是的，好的，」 小女孩回答說。「我已經筋疲力盡了。」於是，稻草人帶領她穿過樹林，直到他們到達小屋，桃樂絲走進去，在一個角落找到了一張用乾葉做的床。</p>
+    <p data-start="510" data-end="523.99999999">She lay down at once, and with Toto beside her soon fell into a sound sleep. The Scarecrow, who was never tired, stood up in another corner and waited patiently until morning came.</p>
+    <p data-start="510" data-end="523.99999999">她立刻躺下，很快就跟多多一起陷入了熟睡。稻草人從來都不會感到疲勞，他站在另一個角落，耐心地等待早晨的到來。</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
