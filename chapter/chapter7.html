@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chapter 7</title>
+  <link rel="icon" type="image/png" href="../icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="area">
+    <audio id="audio" controls style="width: 95%;">
+      <source src="../audio/wonderfulwizardofoz_07_baum_64kb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div id="button">
+      <button class="button" id="playButton" onclick="playAudio()">play</button>
+      <button class="button" onclick="playPause()">pause</button>
+      <button class="button" onclick="prevSentence()">previous</button>
+      <button class="button" onclick="nextSentence()">next</button>
+      <button class="button" onclick="jumpToFirstSentence()">first</button>
+      <button class="button" onclick="jumpToLastSentence()">last</button>
+      <button id="shortcut">Shortcut: "Space": play/pause; ⬅️ ➡️ ⬆️ ⬇️ </button>
+      <a id="home" href="../index.html">Home</a>
+    </div>
+  </div>
+  <div class="transcript-container" id="transcript">
+    <p data-start="13" data-end="14.99999999" style="margin-left: 35%;">Chapter 7: The Journey to the Great Oz</p>
+
+    <p data-start="15" data-end="20.99999999">They were obliged to camp out that night under a large tree in the forest, for there were no houses near.</p>
+    
+    <p data-start="21" data-end="34.99999999">The tree made a good, thick covering to protect them from the dew, and the Tin Woodman chopped a great pile of wood with his axe and Dorothy built a splendid fire that warmed her and made her feel less lonely. </p>
+    
+    <p data-start="35" data-end="40.99999999">She and Toto ate the last of their bread, and now she did not know what they would do for breakfast.</p>
+    
+    <p data-start="41" data-end="46.99999999">"If you wish," said the Lion, "I will go into the forest and kill a deer for you.</p>
+    
+    <p data-start="47" data-end="54.99999999">You can roast it by the fire, since your tastes are so peculiar that you prefer cooked food, and then you will have a very good breakfast."</p>
+    
+    <p data-start="55" data-end="57.99999999">"Don't! Please don't," begged the Tin Woodman.</p>
+    
+    <p data-start="58" data-end="63.99999999">"I should certainly weep if you killed a poor deer, and then my jaws would rust again."</p>
+    
+    <p data-start="64" data-end="71.99999999">But the Lion went away into the forest and found his own supper, and no one ever knew what it was, for he didn't mention it.</p>
+    
+    <p data-start="72" data-end="80.99999999">And the Scarecrow found a tree full of nuts and filled Dorothy's basket with them, so that she would not be hungry for a long time. </p>
+    
+    <p data-start="81" data-end="90.99999999">She thought this was very kind and thoughtful of the Scarecrow, but she laughed heartily at the awkward way in which the poor creature picked up the nuts.</p>
+    
+    <p data-start="91" data-end="98.99999999">His padded hands were so clumsy and the nuts were so small that he dropped almost as many as he put in the basket.</p>
+    
+    <p data-start="99" data-end="111.99999999">But the Scarecrow did not mind how long it took him to fill the basket, for it enabled him to keep away from the fire, as he feared a spark might get into his straw and burn him up.</p>
+    
+    <p data-start="112" data-end="120.99999999">So he kept a good distance away from the flames, and only came near to cover Dorothy with dry leaves when she lay down to sleep.</p>
+    
+    <p data-start="121" data-end="126.99999999">These kept her very snug and warm, and she slept soundly until morning.</p>
+    
+    <p data-start="127" data-end="135.99999999">When it was daylight, the girl bathed her face in a little rippling brook, and soon after they all started toward the Emerald City.</p>
+    
+    <p data-start="136" data-end="139.99999999">This was to be an eventful day for the travelers.</p>
+    
+    <p data-start="140" data-end="150.99999999">They had hardly been walking an hour when they saw before them a great ditch that crossed the road and divided the forest as far as they could see on either side.</p>
+    
+    <p data-start="151" data-end="162.99999999">It was a very wide ditch, and when they crept up to the edge and looked into it they could see it was also very deep, and there were many big, jagged rocks at the bottom.</p>
+    
+    <p data-start="163" data-end="170.99999999">The sides were so steep that none of them could climb down, and for a moment it seemed that their journey must end.</p>
+    
+    <p data-start="171" data-end="174.99999999">"What shall we do?" asked Dorothy despairingly.</p>
+    
+    <p data-start="175" data-end="182.99999999">"I haven't the faintest idea," said the Tin Woodman, and the Lion shook his shaggy mane and looked thoughtful.</p>
+    
+    <p data-start="183" data-end="187.99999999">But the Scarecrow said, "We cannot fly, that is certain.</p>
+    
+    <p data-start="188" data-end="189.99999999">Neither can we climb down into this great ditch.</p>
+    
+    <p data-start="190" data-end="194.99999999">Therefore, if we cannot jump over it, we must stop where we are."</p>
+    
+    <p data-start="195" data-end="201.99999999">"I think I could jump over it," said the Cowardly Lion, after measuring the distance carefully in his mind.</p>
+    
+    <p data-start="202" data-end="209.99999999">"Then we are all right," answered the Scarecrow, "for you can carry us all over on your back, one at a time."</p>
+    
+    <p data-start="210" data-end="213.99999999">"Well, I'll try it," said the Lion. "Who will go first?"</p>
+    
+    <p data-start="214" data-end="224.99999999">"I will," declared the Scarecrow, "for, if you found that you could not jump over the gulf, Dorothy would be killed, or the Tin Woodman badly dented on the rocks below.</p>
+    
+    <p data-start="225" data-end="230.99999999">But if I am on your back it will not matter so much, for the fall would not hurt me at all."</p>
+    
+    <p data-start="231" data-end="238.99999999">"I am terribly afraid of falling, myself," said the Cowardly Lion, "but I suppose there is nothing to do but try it.</p>
+    
+    <p data-start="239" data-end="242.99999999">So get on my back and we will make the attempt."</p>
+    
+    <p data-start="243" data-end="250.99999999">The Scarecrow sat upon the Lion's back, and the big beast walked to the edge of the gulf and crouched down.</p>
+    
+    <p data-start="251" data-end="253.99999999">"Why don't you run and jump?" asked the Scarecrow.</p>
+    
+    <p data-start="254" data-end="257.99999999">"Because that isn't the way we Lions do these things," he replied.</p>
+    
+    <p data-start="258" data-end="264.99999999">Then giving a great spring, he shot through the air and landed safely on the other side.</p>
+    
+    <p data-start="265" data-end="275.99999999">They were all greatly pleased to see how easily he did it, and after the Scarecrow had got down from his back the Lion sprang across the ditch again.</p>
+    
+    <p data-start="276" data-end="285.99999999">Dorothy thought she would go next; so she took Toto in her arms and climbed on the Lion's back, holding tightly to his mane with one hand.</p>
+    
+    <p data-start="286" data-end="294.99999999">The next moment it seemed as if she were flying through the air; and then, before she had time to think about it, she was safe on the other side.</p>
+    
+    <p data-start="295" data-end="311.99999999">The Lion went back a third time and got the Tin Woodman, and then they all sat down for a few moments to give the beast a chance to rest, for his great leaps had made his breath short, and he panted like a big dog that has been running too long.</p>
+    
+    <p data-start="312" data-end="316.99999999">They found the forest very thick on this side, and it looked dark and gloomy.</p>
+    
+    <p data-start="317" data-end="330.99999999">After the Lion had rested they started along the road of yellow brick, silently wondering, each in his own mind, if ever they would come to the end of the woods and reach the bright sunshine again.</p>
+    
+    <p data-start="331" data-end="343.99999999">To add to their discomfort, they soon heard strange noises in the depths of the forest, and the Lion whispered to them that it was in this part of the country that the Kalidahs lived.</p>
+    
+    <p data-start="344" data-end="347.99999999">"What are the Kalidahs?" asked the girl.</p>
+    
+    <p data-start="348" data-end="361.99999999">"They are monstrous beasts with bodies like bears and heads like tigers," replied the Lion, "and with claws so long and sharp that they could tear me in two as easily as I could kill Toto.</p>
+    
+    <p data-start="362" data-end="365.99999999">I'm terribly afraid of the Kalidahs."</p>
+    
+    <p data-start="366" data-end="371.99999999">"I'm not surprised that you are," returned Dorothy. "They must be dreadful beasts."</p>
+    
+    <p data-start="372" data-end="378.99999999">The Lion was about to reply when suddenly they came to another gulf across the road.</p>
+    
+    <p data-start="379" data-end="384.99999999">But this one was so broad and deep that the Lion knew at once he could not leap across it.</p>
+    
+    <p data-start="385" data-end="391.99999999">So they sat down to consider what they should do, and after serious thought the Scarecrow said:</p>
+    
+    <p data-start="392" data-end="394.99999999">"Here is a great tree, standing close to the ditch.</p>
+    
+    <p data-start="395" data-end="402.99999999">If the Tin Woodman can chop it down, so that it will fall to the other side, we can walk across it easily."</p>
+    
+    <p data-start="403" data-end="406.99999999">"That is a first-rate idea," said the Lion.</p>
+    
+    <p data-start="407" data-end="411.99999999">"One would almost suspect you had brains in your head, instead of straw."</p>
+    
+    <p data-start="412" data-end="419.99999999">The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through.</p>
+    
+    <p data-start="420" data-end="434.99999999">Then the Lion put his strong front legs against the tree and pushed with all his might, and slowly the big tree tipped and fell with a crash across the ditch, with its top branches on the other side.</p>
+    
+    <p data-start="435" data-end="451.99999999">They had just started to cross this queer bridge when a sharp growl made them all look up, and to their horror they saw running toward them two great beasts with bodies like bears and heads like tigers.</p>
+    
+    <p data-start="452" data-end="457.99999999">"They are the Kalidahs!" said the Cowardly Lion, beginning to tremble.</p>
+    
+    <p data-start="458" data-end="459.99999999">"Quick!" cried the Scarecrow. "Let us cross over."</p>
+    
+    <p data-start="460" data-end="468.99999999">So Dorothy went first, holding Toto in her arms, the Tin Woodman followed, and the Scarecrow came next.</p>
+    
+    <p data-start="469" data-end="487.99999999">The Lion, although he was certainly afraid, turned to face the Kalidahs, and then he gave so loud and terrible a roar that Dorothy screamed and the Scarecrow fell over backward, while even the fierce beasts stopped short and looked at him in surprise.</p>
+    
+    <p data-start="488" data-end="501.99999999">But, seeing they were bigger than the Lion, and remembering that there were two of them and only one of him, the Kalidahs again rushed forward, and the Lion crossed over the tree and turned to see what they would do next.</p>
+    
+    <p data-start="502" data-end="509.99999999">Without stopping an instant the fierce beasts also began to cross the tree. And the Lion said to Dorothy:</p>
+    
+    <p data-start="510" data-end="514.99999999">"We are lost, for they will surely tear us to pieces with their sharp claws.</p>
+    
+    <p data-start="515" data-end="519.99999999">But stand close behind me, and I will fight them as long as I am alive."</p>
+    
+    <p data-start="520" data-end="522.99999999">"Wait a minute!" called the Scarecrow.</p>
+    
+    <p data-start="523" data-end="530.99999999">He had been thinking what was best to be done, and now he asked the Woodman to chop away the end of the tree that rested on their side of the ditch.</p>
+    
+    <p data-start="531" data-end="550.99999999">The Tin Woodman began to use his axe at once, and, just as the two Kalidahs were nearly across, the tree fell with a crash into the gulf, carrying the ugly, snarling brutes with it, and both were dashed to pieces on the sharp rocks at the bottom.</p>
+    
+    <p data-start="551" data-end="565.99999999">"Well," said the Cowardly Lion, drawing a long breath of relief, "I see we are going to live a little while longer, and I am glad of it, for it must be a very uncomfortable thing not to be alive.</p>
+    
+    <p data-start="566" data-end="570.99999999">Those creatures frightened me so badly that my heart is beating yet."</p>
+    
+    <p data-start="571" data-end="575.99999999">"Ah," said the Tin Woodman sadly, "I wish I had a heart to beat."</p>
+    
+    <p data-start="576" data-end="587.99999999">This adventure made the travelers more anxious than ever to get out of the forest, and they walked so fast that Dorothy became tired, and had to ride on the Lion's back.</p>
+    
+    <p data-start="588" data-end="599.99999999">To their great joy the trees became thinner the farther they advanced, and in the afternoon they suddenly came upon a broad river, flowing swiftly just before them.</p>
+    
+    <p data-start="600" data-end="613.99999999">On the other side of the water they could see the road of yellow brick running through a beautiful country, with green meadows dotted with bright flowers and all the road bordered with trees hanging full of delicious fruits.</p>
+    
+    <p data-start="614" data-end="618.99999999">They were greatly pleased to see this delightful country before them.</p>
+    
+    <p data-start="619" data-end="621.99999999">"How shall we cross the river?" asked Dorothy.</p>
+    
+    <p data-start="622" data-end="624.99999999">"That is easily done," replied the Scarecrow.</p>
+    
+    <p data-start="625" data-end="630.99999999">"The Tin Woodman must build us a raft, so we can float to the other side."</p>
+    
+    <p data-start="631" data-end="642.99999999">So the Woodman took his axe and began to chop down small trees to make a raft, and while he was busy at this the Scarecrow found on the riverbank a tree full of fine fruit.</p>
+    
+    <p data-start="643" data-end="649.99999999">This pleased Dorothy, who had eaten nothing but nuts all day, and she made a hearty meal of the ripe fruit.</p>
+    
+    <p data-start="650" data-end="661.99999999">But it takes time to make a raft, even when one is as industrious and untiring as the Tin Woodman, and when night came the work was not done.</p>
+    
+    <p data-start="662" data-end="677.99999999">So they found a cozy place under the trees where they slept well until the morning; and Dorothy dreamed of the Emerald City, and of the good Wizard Oz, who would soon send her back to her own home again.</p>
+    
+    
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
