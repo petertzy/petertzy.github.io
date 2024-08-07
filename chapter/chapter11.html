@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chapter 11</title>
+  <link rel="icon" type="image/png" href="../icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="area">
+    <audio id="audio" controls style="width: 95%; display: none;">
+      <source src="https://static.wixstatic.com/mp3/67c6c6_d2f4d67225654ad895985b4a51c92143.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div id="button">
+      <button class="button" id="playButton" onclick="playAudio()">play</button>
+      <button class="button" onclick="playPause()">pause</button>
+      <button class="button" onclick="prevSentence()">previous</button>
+      <button class="button" onclick="nextSentence()">next</button>
+      <button class="button" onclick="jumpToFirstSentence()">first</button>
+      <button class="button" onclick="jumpToLastSentence()">last</button>
+      <button id="shortcut">Shortcut: "Space": play/pause; ⬅️ ➡️ ⬆️ ⬇️ </button>
+      <a id="home" href="../index.html">Home</a>
+    </div>
+  </div>
+
+
+  <div class="transcript-container" id="transcript">
+    <p data-start="13.66" data-end="15.88" style="margin-left: 35%;">Chapter 11: The wonderful city of Oz.</p>
+    <p data-start="13.66" data-end="15.88" style="margin-left: 35%;">第十一章：奇妙的翡翠城。</p>
+
+    <p data-start="16.62" data-end="25.00">Even with eyes protected by the green spectacles, Dorothy and her friends were at first dazzled by the brilliancy of the wonderful City.</p>
+    <p data-start="16.62" data-end="25.00">即使戴著綠色眼鏡保護眼睛，桃樂絲和她的朋友們一開始還是被這座奇妙城市的光輝所眩目。</p>
+
+    <p data-start="25.54" data-end="33.24">The streets were lined with beautiful houses all built of green marble and studded everywhere with sparkling emeralds.</p>
+    <p data-start="25.54" data-end="33.24">街道兩旁都是美麗的房子，全部用綠色大理石建造，到處鑲嵌著閃閃發光的綠寶石。</p>
+
+    <p data-start="33.96" data-end="44.22">They walked over a pavement of the same green marble, and where the blocks were joined together were rows of emeralds, set closely, and glittering in the brightness of the sun.</p>
+    <p data-start="33.96" data-end="44.22">他們走在同樣綠色大理石鋪成的人行道上，石塊之間的接縫處鑲嵌著密密麻麻的綠寶石，在陽光的照耀下閃閃發光。</p>
+
+    <p data-start="44.70" data-end="53.04">The window panes were of green glass; even the sky above the City had a green tint, and the rays of the sun were green.</p>
+    <p data-start="44.70" data-end="53.04">窗戶的玻璃是綠色的；甚至城市上空的天空也帶有綠色，陽光的光線也是綠色的。</p>
+
+    <p data-start="54.00" data-end="61.98">There were many people--men, women, and children--walking about, and these were all dressed in green clothes and had greenish skins.</p>
+    <p data-start="54.00" data-end="61.98">有許多人——男人、女人和孩子——在四處走動，他們都穿著綠色的衣服，皮膚呈綠色。</p>
+
+    <p data-start="62.86" data-end="74.28">They looked at Dorothy and her strangely assorted company with wondering eyes, and the children all ran away and hid behind their mothers when they saw the Lion; but no one spoke to them.</p>
+    <p data-start="62.86" data-end="74.28">他們用好奇的眼睛看著桃樂絲和她那奇怪的夥伴們，孩子們看到獅子後都跑開並躲在母親身後；但沒有人和他們說話。</p>
+
+    <p data-start="74.70" data-end="97.68">Many shops stood in the street, and Dorothy saw that everything in them was green. Green candy and green pop corn were offered for sale, as well as green shoes, green hats, and green clothes of all sorts. At one place a man was selling green lemonade, and when the children bought it Dorothy could see that they paid for it with green pennies.</p>
+    <p data-start="74.70" data-end="97.68">街道上有許多商店，桃樂絲看到裡面的一切都是綠色的。綠色糖果和綠色爆米花在售賣，還有綠色鞋子、綠色帽子和各種綠色衣物。在一處，一個男人在賣綠色檸檬水，孩子們買的時候，桃樂絲看到他們用綠色的便士支付。</p>
+
+    <p data-start="98.98" data-end="110.50">There seemed to be no horses nor animals of any kind; the men carried things around in little green carts, which they pushed before them. Everyone seemed happy and contented and prosperous.</p>
+    <p data-start="98.98" data-end="110.50">似乎沒有馬匹或任何種類的動物；男人們用小綠車推著東西四處走。每個人看起來都很快樂、滿足且富足。</p>
+
+    <p data-start="112.28" data-end="122.60">The Guardian of the Gates led them through the streets until they came to a big building, exactly in the middle of the City, which was the Palace of Oz, the Great Wizard.</p>
+    <p data-start="112.28" data-end="122.60">門衛帶領他們穿過街道，直到來到一座大樓前，正好在城市的正中間，那是偉大的巫師奧茲的宮殿。</p>
+
+    <p data-start="123.42" data-end="144.60">There was a soldier before the door, dressed in a green uniform and wearing a long green beard. "Here are strangers," said the Guardian of the Gates to him, "and they demand to see the Great Oz." "Step inside," answered the soldier, "and I will carry your message to him."</p>
+    <p data-start="123.42" data-end="144.60">門前有一名士兵，穿著綠色制服，留著長長的綠色鬍子。"這裡有陌生人，"門衛對他說，"他們要求見偉大的奧茲。" "進來吧，"士兵回答道，"我會把你的訊息傳達給他。"</p>
+
+    <p data-start="144.74" data-end="152.68">So they passed through the Palace Gates and were led into a big room with a green carpet and lovely green furniture set with emeralds.</p>
+    <p data-start="144.74" data-end="152.68">於是他們穿過宮殿大門，被引入一間大房間，裡面鋪著綠色地毯，有漂亮的綠色家具，鑲嵌著綠寶石。</p>
+
+    <p data-start="152.98" data-end="158.34">The soldier made them all wipe their feet upon a green mat before entering this room, and when they were seated he said politely:</p>
+    <p data-start="152.98" data-end="158.34">士兵讓他們在進入這個房間之前在綠色墊子上擦腳，當他們坐下時，他禮貌地說：</p>
+
+    <p data-start="158.80" data-end="165.02">"Please make yourselves comfortable while I go to the door of the Throne Room and tell Oz you are here."</p>
+    <p data-start="158.80" data-end="165.02">"請舒適地坐著，我去王座室的門口告訴奧茲你們來了。"</p>
+
+    <p data-start="166.22" data-end="172.28">They had to wait a long time before the soldier returned. When, at last, he came back, Dorothy asked:</p>
+    <p data-start="166.22" data-end="172.28">他們等了很久士兵才回來。最後，當他回來時，桃樂絲問道：</p>
+
+    <p data-start="172.68" data-end="202.36">"Have you seen Oz?" "Oh, no," returned the soldier; "I have never seen him. But I spoke to him as he sat behind his screen and gave him your message. He said he will grant you an audience, if you so desire; but each one of you must enter his presence alone, and he will admit but one each day. Therefore, as you must remain in the Palace for several days, I will have you shown to rooms where you may rest in comfort after your journey."</p>
+    <p data-start="172.68" data-end="202.36">"你見到奧茲了嗎？" "哦，沒有，"士兵回答道；"我從未見過他。但我在他坐在屏風後面時和他說話，並告訴他你的訊息。他說如果你們願意，他會接見你們；但你們每個人必須單獨進入他的面前，他每天只接見一個人。因此，由於你們必須在宮殿裡呆上幾天，我會讓你們看房間，好讓你們在旅途後舒適地休息。"</p>
+
+    <p data-start="202.58" data-end="232.50">"Thank you," replied the girl; "that is very kind of Oz." The soldier now blew upon a green whistle, and at once a young girl, dressed in a pretty green silk gown, entered the room. She had lovely green hair and green eyes, and she bowed low before Dorothy as she said, "Follow me and I will show you your room."</p>
+    <p data-start="202.58" data-end="232.50">"謝謝，"女孩回答道；"奧茲真是太好了。"士兵現在吹響了綠色哨子，馬上就有一位穿著漂亮綠色絲綢裙子的年輕女孩進了房間。她有著可愛的綠色頭髮和綠色眼睛，她向桃樂絲深深鞠躬，說道，"跟我來，我會帶你去你的房間。"</p>
+
+    <p data-start="233.08" data-end="242.18">So Dorothy said good-bye to all her friends except Toto, and taking the dog in her arms followed the green girl through seven passages and up three flights of stairs until they came to a room at the front of the Palace.</p>
+    <p data-start="233.08" data-end="242.18">於是桃樂絲和除托托外的所有朋友告別，抱起小狗，跟隨著綠衣女孩穿過七條走廊，上了三層樓梯，直到他們來到宮殿前面的一個房間。</p>
+
+    <p data-start="242.92" data-end="253.10">It was the sweetest little room in the world, with a soft comfortable bed that had sheets of green silk and a green velvet counterpane.</p>
+    <p data-start="242.92" data-end="253.10">那是世界上最可愛的小房間，裡面有一張柔軟舒適的床，鋪著綠色絲綢床單和綠色天鵝絨被褥。</p>
+
+    <p data-start="253.68" data-end="283.50">There was a tiny fountain in the middle of the room, that shot a spray of green perfume into the air, to fall back into a beautifully carved green marble basin. Beautiful green flowers stood in the windows, and there was a shelf with a row of little green books. When Dorothy had time to open these books she found them full of queer green pictures that made her laugh, they were so funny.</p>
+    <p data-start="253.68" data-end="283.50">房間中央有一個小噴泉，噴出綠色香水的水霧，落回到一個漂亮雕刻的綠色大理石盆裡。窗戶上擺著美麗的綠色花朵，有一個書架，上面有一排小綠書。當桃樂絲有時間打開這些書時，她發現裡面充滿了奇怪的綠色圖片，這些圖片讓她笑了，因為它們太有趣了。</p>
+
+    <p data-start="283.52" data-end="291.10">In a wardrobe were many green dresses, made of silk and satin and velvet; and all of them fitted Dorothy exactly. "Make yourself perfectly at home,"</p>
+    <p data-start="283.52" data-end="291.10">在一個衣櫥裡有許多綠色連衣裙，都是用絲綢、緞子和天鵝絨製成的；所有的衣服都非常合桃樂絲的身。"請完全把這裡當成家，"</p>
+
+    <p data-start="291.60" data-end="298.04">said the green girl, "and if you wish for anything ring the bell. Oz will send for you tomorrow morning."</p>
+    <p data-start="291.60" data-end="298.04">綠衣女孩說，"如果你需要什麼就按鈴。奧茲會在明天早上召見你。"</p>
+
+    <p data-start="298.84" data-end="305.64">She left Dorothy alone and went back to the others. These she also led to rooms, and each one of them found himself lodged in a very pleasant part of the Palace.</p>
+    <p data-start="298.84" data-end="305.64">她把桃樂絲獨自留在那裡，然後回到其他人身邊。她也帶他們去房間，他們每個人都住在宮殿的一個非常舒適的地方。</p>
+
+    <p data-start="306.22" data-end="312.54">Of course this politeness was wasted on the Scarecrow;</p>
+    <p data-start="306.22" data-end="312.54">當然，這種禮貌對稻草人來說是浪費的；</p>
+
+    <p data-start="312.56" data-end="319.06">for when he found himself alone in his room he stood stupidly in one spot,</p>
+    <p data-start="312.56" data-end="319.06">因為當他發現自己獨自在房間裡時，他愚蠢地站在一個地方，</p>
+
+    <p data-start="319.54" data-end="326.26">just within the doorway, to wait till morning. It would not rest him to lie down, and he could not close his eyes;</p>
+    <p data-start="319.54" data-end="326.26">就在門口，等到早晨。躺下並不能讓他休息，他也不能閉上眼睛；</p>
+
+    <p data-start="326.26" data-end="333.74">so he remained all night staring at a little spider which was weaving its web in a corner of the room,</p>
+    <p data-start="326.26" data-end="333.74">所以他整夜都盯著一隻正在房間角落織網的小蜘蛛看，</p>
+
+    <p data-start="333.98" data-end="340.30">just as if it were not one of the most wonderful rooms in the world.</p>
+    <p data-start="333.98" data-end="340.30">就好像這不是世界上最美妙的房間之一一樣。</p>
+
+    <p data-start="340.32" data-end="346.26">The Tin Woodman lay down on his bed from force of habit, for he remembered when he was made of flesh;</p>
+    <p data-start="340.32" data-end="346.26">鐵皮人因為習慣而躺在床上，因為他記得他曾經是肉身的時候；</p>
+
+    <p data-start="346.26" data-end="352.00">but not being able to sleep, he passed the night moving his joints up and down to make sure they kept in good working order.</p>
+    <p data-start="346.26" data-end="352.00">但由於無法入睡，他整夜都在上下活動關節，以確保它們保持良好的工作狀態。</p>
+
+    <p data-start="352.24" data-end="359.22">The Lion would have preferred a bed of dried leaves in the forest, and did not like being shut up in a room;</p>
+    <p data-start="352.24" data-end="359.22">獅子更喜歡森林裡的枯葉床，不喜歡被關在房間裡；</p>
+
+    <p data-start="359.46" data-end="373.70">but he had too much sense to let this worry him, so he sprang upon the bed and rolled himself up like a cat and purred himself asleep in a minute.</p>
+    <p data-start="359.46" data-end="373.70">但他太理智了，不會讓這事困擾他，所以他跳上床，像貓一樣捲起來，一分鐘內就呼嚕著睡著了。</p>
+
+    <p data-start="374.14" data-end="381.22">The next morning, after breakfast, the green maiden came to fetch Dorothy, and she dressed her in one of the prettiest gowns, made of green brocaded satin.</p>
+    <p data-start="374.14" data-end="381.22">第二天早上，早餐後，那位綠衣少女來接桃樂絲，她給桃樂絲穿上了一件最漂亮的綠色織錦緞禮服。</p>
+
+    <p data-start="381.32" data-end="394.76">Dorothy put on a green silk apron and tied a green ribbon around Toto's neck, and they started for the Throne Room of the Great Oz.</p>
+    <p data-start="381.32" data-end="394.76">桃樂絲系上了一條綠色絲質圍裙，並在托托的脖子上系了一條綠色絲帶，然後他們啟程前往偉大奧茲的王座室。</p>
+
+    <p data-start="395.20" data-end="415.02">First they came to a great hall in which were many ladies and gentlemen of the court, all dressed in rich costumes. These people had nothing to do but talk to each other, but they always came to wait outside the Throne Room every morning, although they were never permitted to see Oz. As Dorothy entered they looked at her curiously, and one of them whispered:</p>
+    <p data-start="395.20" data-end="415.02">首先，他們來到一個大廳，裡面有許多宮廷的女士和紳士，全部穿著華麗的服裝。這些人無事可做，只能互相交談，但他們每天早上都會來王座室外等待，儘管從未被允許見到奧茲。當桃樂絲進來時，他們好奇地看著她，其中一個人低聲說：</p>
+
+    <p data-start="415.50" data-end="422.22">"Are you really going to look upon the face of Oz the Terrible?" "Of course," answered the girl, "if he will see me."</p>
+    <p data-start="415.50" data-end="422.22">"你真的要見奧茲大帝的真面目嗎？" "當然，"女孩回答道，"如果他願意見我。"</p>
+
+    <p data-start="423.08" data-end="430.94">"Oh, he will see you," said the soldier who had taken her message to the Wizard, "although he does not like to have people ask to see him.</p>
+    <p data-start="423.08" data-end="430.94">"哦，他會見你的，"那個把她的信息傳遞給巫師的士兵說，"雖然他不喜歡有人要求見他。</p>
+
+    <p data-start="431.56" data-end="444.04">Indeed, at first he was angry and said I should send you back where you came from. Then he asked me what you looked like, and when I mentioned your silver shoes he was very much interested.</p>
+    <p data-start="431.56" data-end="444.04">事實上，起初他很生氣，說我應該把你送回你來的地方。然後他問我你長什麼樣子，當我提到你的銀鞋時，他非常感興趣。</p>
+
+    <p data-start="445.10" data-end="451.88">At last I told him about the mark upon your forehead, and he decided he would admit you to his presence.</p>
+    <p data-start="445.10" data-end="451.88">最後我告訴他你額頭上的標記，他決定允許你進見他。</p>
+
+    <p data-start="453.06" data-end="461.10">Just then a bell rang, and the green girl said to Dorothy, "That is the signal. You must go into the Throne Room alone."</p>
+    <p data-start="453.06" data-end="461.10">就在這時，鈴聲響起，綠衣女孩對桃樂絲說，"那是信號。你必須獨自進入王座室。"</p>
+
+    <p data-start="461.96" data-end="468.66">She opened a little door and Dorothy walked boldly through and found herself in a wonderful place.</p>
+    <p data-start="461.96" data-end="468.66">她打開一扇小門，桃樂絲大膽地走過去，發現自己身處一個奇妙的地方。</p>
+
+    <p data-start="469.26" data-end="478.40">It was a big, round room with a high arched roof, and the walls and ceiling and floor were covered with large emeralds set closely together.</p>
+    <p data-start="469.26" data-end="478.40">這是一個大圓形房間，有高高的拱形屋頂，牆壁、天花板和地板上鑲滿了密密麻麻的大綠寶石。</p>
+
+    <p data-start="479.28" data-end="486.80">In the center of the roof was a great light, as bright as the sun, which made the emeralds sparkle in a wonderful manner.</p>
+    <p data-start="479.28" data-end="486.80">屋頂中央有一個大燈，亮如太陽，使綠寶石以奇妙的方式閃閃發光。</p>
+
+    <p data-start="487.78" data-end="493.90">But what interested Dorothy most was the big throne of green marble that stood in the middle of the room.</p>
+    <p data-start="487.78" data-end="493.90">但桃樂絲最感興趣的是房間中央那張綠色大理石製成的大王座。</p>
+
+    <p data-start="494.48" data-end="524.22">It was shaped like a chair and sparkled with gems, as did everything else. In the center of the chair was an enormous Head, without a body to support it or any arms or legs whatever. There was no hair upon this head, but it had eyes and a nose and mouth, and was much bigger than the head of the biggest giant.</p>
+    <p data-start="494.48" data-end="524.22">它的形狀像一把椅子，閃耀著寶石，就像其他一切一樣。椅子的中央有一個巨大的頭，沒有身體支撐，也沒有任何手臂或腿。這個頭上沒有頭髮，但有眼睛、鼻子和嘴巴，比最大的巨人的頭還要大得多。</p>
+
+    <p data-start="524.88" data-end="530.82">As Dorothy gazed upon this in wonder and fear, the eyes turned slowly and looked at her sharply and steadily. Then the mouth moved, and Dorothy heard a voice say:</p>
+    <p data-start="524.88" data-end="530.82">當桃樂絲驚訝且恐懼地注視著這個頭時，那雙眼睛慢慢轉動，銳利而穩定地看著她。然後嘴巴動了，桃樂絲聽到一個聲音說：</p>
+
+    <p data-start="532.10" data-end="537.10">"I am Oz, the Great and Terrible. Who are you, and why do you seek me?"</p>
+    <p data-start="532.10" data-end="537.10">"我是奧茲，大而可怕的奧茲。你是誰？為什麼來找我？"</p>
+
+    <p data-start="538.02" data-end="544.08">It was not such an awful voice as she had expected to come from the big Head; so she took courage and answered:</p>
+    <p data-start="538.02" data-end="544.08">這聲音並不像她預期的那麼可怕，所以她鼓起勇氣回答：</p>
+
+    <p data-start="544.72" data-end="552.38">"I am Dorothy, the Small and Meek. I have come to you for help." The eyes looked at her thoughtfully for a full minute.</p>
+    <p data-start="544.72" data-end="552.38">"我是桃樂絲，小而溫順的桃樂絲。我來找你尋求幫助。" 那雙眼睛若有所思地看著她整整一分鐘。</p>
+
+    <p data-start="552.96" data-end="561.86">Then said the voice: "Where did you get the silver shoes?""I got them from the Wicked Witch of the East, when my house fell on her and killed her," she replied.</p>
+    <p data-start="552.96" data-end="561.86">然後那個聲音說："你從哪裡得到的這雙銀鞋？""我從東方的壞女巫那裡得到了它們，當時我的房子砸在她身上並殺死了她，"她回答。</p>
+
+    <p data-start="561.86" data-end="576.86">"Where did you get the mark upon your forehead?" continued the voice. "That is where the Good Witch of the North kissed me when she bade me good-bye and sent me to you," said the girl.</p>
+    <p data-start="561.86" data-end="576.86">"你額頭上的標記是從哪裡來的？"聲音繼續說。"那是北方的好女巫在與我告別並送我來這裡時親吻我的地方，"女孩說。</p>
+
+    <p data-start="576.88" data-end="584.22">Again the eyes looked at her sharply, and they saw she was telling the truth. Then Oz asked, "What do you wish me to do?"</p>
+    <p data-start="576.88" data-end="584.22">眼睛又一次銳利地看著她，他們看到她說的是實話。然後奧茲問道，"你希望我做什麼？"</p>
+
+    <p data-start="585.08" data-end="592.34">"Send me back to Kansas, where my Aunt Em and Uncle Henry are," she answered earnestly.</p>
+    <p data-start="585.08" data-end="592.34">"把我送回堪薩斯，我的艾姆嬸嬸和亨利叔叔在那裡，"她認真地回答。</p>
+
+    <p data-start="592.54" data-end="598.22">"I don't like your country, although it is so beautiful. And I am sure Aunt Em will be dreadfully worried over my being away so long."</p>
+    <p data-start="592.54" data-end="598.22">"我不喜歡你的國家，儘管它如此美麗。而且我肯定艾姆嬸嬸會非常擔心我離開這麼久。"</p>
+
+    <p data-start="598.24" data-end="609.24">The eyes winked three times, and then they turned up to the ceiling and down to the floor and rolled around so queerly that they seemed to see every part of the room.</p>
+    <p data-start="598.24" data-end="609.24">那雙眼睛眨了三次，然後它們向上看天花板，再向下看地板，奇怪地轉動，似乎看到了房間的每個角落。</p>
+
+    <p data-start="609.60" data-end="618.70">And at last they looked at Dorothy again. "Why should I do this for you?" asked Oz.</p>
+    <p data-start="609.60" data-end="618.70">最後他們又看向桃樂絲。"為什麼我要為你做這件事？"奧茲問。</p>
+
+    <p data-start="619.38" data-end="627.20">"Because you are strong and I am weak; because you are a Great Wizard and I am only a little girl."</p>
+    <p data-start="619.38" data-end="627.20">"因為你強大而我弱小；因為你是偉大的巫師而我只是一個小女孩。"</p>
+
+    <p data-start="628.04" data-end="630.76">"But you were strong enough to kill the Wicked Witch of the East," said Oz.</p>
+    <p data-start="628.04" data-end="630.76">"但你有足夠的力量殺死東方的壞女巫，"奧茲說。</p>
+
+    <p data-start="631.48" data-end="636.54">"That just happened," returned Dorothy simply; "I could not help it."</p>
+    <p data-start="631.48" data-end="636.54">"那只是偶然發生的，"桃樂絲簡單地回答；"我無能為力。"</p>
+
+    <p data-start="637.24" data-end="648.50">"Well," said the Head, "I will give you my answer. You have no right to expect me to send you back to Kansas unless you do something for me in return.</p>
+    <p data-start="637.24" data-end="648.50">"好吧，"頭說，"我會給你我的答案。除非你為我做些回報，否則你無權期望我把你送回堪薩斯。</p>
+
+    <p data-start="648.52" data-end="676.78">In this country everyone must pay for everything he gets. If you wish me to use my magic power to send you home again you must do something for me first. Help me and I will help you." "What must I do?" asked the girl. "Kill the Wicked Witch of the West," answered Oz. "But I cannot!" exclaimed Dorothy, greatly surprised.</p>
+    <p data-start="648.52" data-end="676.78">在這個國家，每個人都必須為他得到的一切付出代價。如果你希望我用魔法把你送回家，你必須先為我做些事。幫助我，我會幫助你。" "我必須做什麼？"女孩問。"殺死西方的壞女巫，"奧茲回答。"但我做不到！"桃樂絲大吃一驚地說。</p>
+
+    <p data-start="677.88" data-end="694.66">"You killed the Witch of the East and you wear the silver shoes, which bear a powerful charm. There is now but one Wicked Witch left in all this land, and when you can tell me she is dead I will send you back to Kansas--but not before."</p>
+    <p data-start="677.88" data-end="694.66">"你殺了東方的女巫，穿著具有強大魔力的銀鞋。現在這片土地上只剩下一個壞女巫了，當你告訴我她死了，我會送你回堪薩斯——但在那之前不會。"</p>
+
+    <p data-start="695.74" data-end="707.42">The little girl began to weep, she was so much disappointed; and the eyes winked again and looked upon her anxiously, as if the Great Oz felt that she could help him if she would.</p>
+    <p data-start="695.74" data-end="707.42">小女孩開始哭泣，她非常失望；眼睛再次眨動，焦慮地看著她，似乎偉大的奧茲覺得她如果願意可以幫助他。</p>
+
+    <p data-start="708.06" data-end="721.62">"I never killed anything, willingly," she sobbed. "Even if I wanted to, how could I kill the Wicked Witch? If you, who are Great and Terrible, cannot kill her yourself, how do you expect me to do it?"</p>
+    <p data-start="708.06" data-end="721.62">"我從未自願殺死任何東西，"她哭泣著說。"即使我想，如何殺死壞女巫？如果你這麼偉大和可怕，自己都無法殺死她，怎麼期望我做到？"</p>
+
+    <p data-start="721.92" data-end="737.40">"I do not know," said the Head; "but that is my answer, and until the Wicked Witch dies you will not see your uncle and aunt again. Remember that the Witch is Wicked--tremendously Wicked -and ought to be killed.</p>
+    <p data-start="721.92" data-end="737.40">"我不知道，"頭說；"但這是我的答案，直到壞女巫死，你都無法再見到你的叔叔和嬸嬸。記住，女巫是邪惡的——極度邪惡——應該被殺死。</p>
+
+    <p data-start="737.42" data-end="743.50">Now go, and do not ask to see me again until you have done your task."</p>
+    <p data-start="737.42" data-end="743.50">現在走吧，在完成你的任務之前不要再要求見我。"</p>
+
+    <p data-start="745.20" data-end="753.70">Sorrowfully Dorothy left the Throne Room and went back where the Lion and the Scarecrow and the Tin Woodman were waiting to hear what Oz had said to her.</p>
+    <p data-start="745.20" data-end="753.70">桃樂絲悲傷地離開王座室，回到獅子、稻草人和鐵皮人等待聽奧茲對她說了什麼的地方。</p>
+
+    <p data-start="750.70" data-end="757.88">"There is no hope for me," she said sadly,</p>
+    <p data-start="750.70" data-end="757.88">"我沒有希望了，"她悲傷地說，</p>
+
+    <p data-start="758.60" data-end="763.68">"for Oz will not send me home until I have killed the Wicked Witch of the West; and that I can never do."</p>
+    <p data-start="758.60" data-end="763.68">"因為奧茲不會送我回家，直到我殺死西方的壞女巫；而我永遠做不到。"</p>
+
+    <p data-start="763.70" data-end="770.80">Her friends were sorry, but could do nothing to help her;</p>
+    <p data-start="763.70" data-end="770.80">她的朋友們很抱歉，但無法幫助她；</p>
+
+    <p data-start="770.80" data-end="776.92">so Dorothy went to her own room and lay down on the bed and cried herself to sleep.</p>
+    <p data-start="770.80" data-end="776.92">於是桃樂絲回到自己的房間，躺在床上哭著入睡。</p>
+
+    <p data-start="776.92" data-end="783.30">The next morning the soldier with the green whiskers came to the Scarecrow and said: "Come with me, for Oz has sent for you."</p>
+    <p data-start="776.92" data-end="783.30">第二天早上，綠鬍子的士兵來找稻草人說："跟我來，奧茲召見你。"</p>
+
+    <p data-start="783.36" data-end="789.54">So the Scarecrow followed him and was admitted into the great Throne Room, where he saw, sitting in the emerald throne, a most lovely Lady.</p>
+    <p data-start="783.36" data-end="789.54">於是稻草人跟隨他，被允許進入偉大的王座室，在那裡他看到坐在綠寶石王座上的是一位最可愛的女士。</p>
+
+    <p data-start="789.66" data-end="798.36">She was dressed in green silk gauze and wore upon her flowing green locks a crown of jewels.</p>
+    <p data-start="789.66" data-end="798.36">她身穿綠色絲綢薄紗，頭上戴著珠寶王冠，綠色長髮垂下。</p>
+
+    <p data-start="798.46" data-end="811.70">Growing from her shoulders were wings, gorgeous in color and so light that they fluttered if the slightest breath of air reached them.</p>
+    <p data-start="798.46" data-end="811.70">她肩膀上長著翅膀，色彩華麗且輕盈，微風一吹便會顫動。</p>
+
+    <p data-start="811.72" data-end="816.84">When the Scarecrow had bowed, as prettily as his straw stuffing would let him, before this beautiful creature, she looked upon him sweetly, and said:</p>
+    <p data-start="811.72" data-end="816.84">當稻草人在這美麗的生物面前，儘其草填充物所能優雅地鞠躬時，她甜美地看著他，說：</p>
+
+    <p data-start="816.86" data-end="823.78">"I am Oz, the Great and Terrible. Who are you, and why do you seek me?"</p>
+    <p data-start="816.86" data-end="823.78">"我是奧茲，偉大而可怕的。你是誰？你為什麼來找我？"</p>
+
+    <p data-start="823.92" data-end="829.66">Now the Scarecrow, who had expected to see the great Head Dorothy had told him of, was much astonished;</p>
+    <p data-start="823.92" data-end="829.66">現在，稻草人本來期望看到桃樂絲告訴他的那顆大頭，感到非常驚訝；</p>
+
+    <p data-start="830.06" data-end="837.04">but he answered her bravely. "I am only a Scarecrow, stuffed with straw. Therefore I have no brains,</p>
+    <p data-start="830.06" data-end="837.04">但他勇敢地回答她。"我只是一個稻草人，裡面塞滿了稻草。因此我沒有腦子，</p>
+
+    <p data-start="837.68" data-end="848.60">and I come to you praying that you will put brains in my head instead of straw, so that I may become as much a man as any other in your dominions." "Why should I do this for you?" asked the Lady.</p>
+    <p data-start="837.68" data-end="848.60">我來找你，祈求你把我的腦袋裡的稻草換成腦子，這樣我就可以成為你領地內和其他人一樣的真正的人。" "我為什麼要為你做這件事？" 女士問。</p>
+
+    <p data-start="849.30" data-end="854.74">"Because you are wise and powerful, and no one else can help me," answered the Scarecrow.</p>
+    <p data-start="849.30" data-end="854.74">"因為你聰明而強大，沒有人能幫助我，"稻草人回答。</p>
+
+    <p data-start="854.92" data-end="862.60">"I never grant favors without some return," said Oz; "but this much I will promise.</p>
+    <p data-start="854.92" data-end="862.60">"我從不無償施惠，"奧茲說；"但這一點我會承諾。</p>
+
+    <p data-start="862.86" data-end="872.86">If you will kill for me the Wicked Witch of the West, I will bestow upon you a great many brains,</p>
+    <p data-start="862.86" data-end="872.86">如果你為我殺死西方的邪惡女巫，我將賜予你許多大腦，</p>
+
+    <p data-start="869.52" data-end="877.14">and such good brains that you will be the wisest man in all the Land of Oz.</p>
+    <p data-start="869.52" data-end="877.14">而且是如此好的大腦，你將成為奧茲國最智慧的人。</p>
+
+    <p data-start="877.14" data-end="883.54">I thought you asked Dorothy to kill the Witch, said the Scarecrow, in surprise. So I did. I don't care who kills her.</p>
+    <p data-start="877.14" data-end="883.54">稻草人驚訝地說：「我以為你讓桃樂絲去殺死女巫。」「沒錯。我不在乎誰殺死她。</p>
+
+    <p data-start="883.74" data-end="891.32">But until she is dead I will not grant your wish. Now go, and do not seek me again until you have earned the brains you so greatly desire.</p>
+    <p data-start="883.74" data-end="891.32">但是在她死之前，我不會滿足你的願望。現在走吧，在你獲得你非常渴望的大腦之前，不要再來見我。」</p>
+
+    <p data-start="891.32" data-end="898.44">The Scarecrow went sorrowfully back to his friends and told them what Oz had said;</p>
+    <p data-start="891.32" data-end="898.44">稻草人悲傷地回到他的朋友們那裡，告訴他們奧茲所說的話；</p>
+
+    <p data-start="899.00" data-end="908.82">and Dorothy was surprised to find that the Great Wizard was not a Head, as she had seen him, but a lovely Lady.</p>
+    <p data-start="899.00" data-end="908.82">桃樂絲很驚訝地發現偉大的巫師不是她所見的那顆頭，而是一位漂亮的女士。</p>
+
+    <p data-start="910.10" data-end="920.08">All the same, said the Scarecrow, she needs a heart as much as the Tin Woodman. On the next morning the soldier with the green whiskers came to the Tin Woodman and said:</p>
+    <p data-start="910.10" data-end="920.08">稻草人說：「不過，這位女士也像鐵皮人一樣需要一顆心。」第二天早上，長著綠色鬍子的士兵來到鐵皮人那裡，說：</p>
+
+    <p data-start="920.56" data-end="928.92">Oz has sent for you. Follow me. So the Tin Woodman followed him and came to the great Throne Room.</p>
+    <p data-start="920.56" data-end="928.92">「奧茲叫你過去。跟我來。」於是鐵皮人跟著他來到偉大的王座廳。</p>
+
+    <p data-start="928.92" data-end="948.92">He did not know whether he would find Oz a lovely Lady or a Head, but he hoped it would be the lovely Lady. For, he said to himself, if it is the head, I am sure I shall not be given a heart, since a head has no heart of its own and therefore cannot feel for me. But if it is the lovely Lady I shall beg hard for a heart,</p>
+    <p data-start="928.92" data-end="948.92">他不知道自己會見到漂亮的女士還是那顆頭，但他希望見到漂亮的女士。「因為，」他對自己說，「如果是那顆頭，我肯定不會得到一顆心，因為頭沒有自己的心，所以不能為我感到難過。但如果是漂亮的女士，我會努力懇求一顆心，因為所有女士都被認為是善良的。」</p>
+
+    <p data-start="949.58" data-end="970.06">for all ladies are themselves said to be kindly hearted. But when the Woodman entered the great Throne Room he saw neither the Head nor the Lady, for Oz had taken the shape of a most terrible Beast. It was nearly as big as an elephant, and the green throne seemed hardly strong enough to hold its weight.</p>
+    <p data-start="949.58" data-end="970.06">因為所有女士都被認為是善良的。」但當鐵皮人進入偉大的王座廳時，他既沒有看到頭，也沒有看到女士，因為奧茲變成了一個最可怕的野獸。這個野獸幾乎和大象一樣大，綠色的王座似乎幾乎無法承受它的重量。</p>
+
+    <p data-start="970.32" data-end="984.50">The Beast had a head like that of a rhinoceros, only there were five eyes in its face. There were five long arms growing out of its body, and it also had five long, slim legs.</p>
+    <p data-start="970.32" data-end="984.50">這個野獸有一個像犀牛一樣的頭，只是它的臉上有五隻眼睛。它的身體上長著五條長臂，還有五條長而瘦的腿。</p>
+
+    <p data-start="985.60" data-end="992.22">Thick, woolly hair covered every part of it, and a more dreadful-looking monster could not be imagined.</p>
+    <p data-start="985.60" data-end="992.22">濃密的羊毛覆蓋了它的每一部分，無法想象一個更可怕的怪物。</p>
+
+    <p data-start="993.06" data-end="999.42">It was fortunate the Tin Woodman had no heart at that moment, for it would have beat loud and fast from terror.</p>
+    <p data-start="993.06" data-end="999.42">幸好鐵皮人此刻沒有心，否則它會因恐懼而跳得又快又響。</p>
+
+    <p data-start="1000.22" data-end="1005.74">But being only tin, the Woodman was not at all afraid, although he was much disappointed.</p>
+    <p data-start="1000.22" data-end="1005.74">但由於只是錫製的，鐵皮人一點也不害怕，雖然他很失望。</p>
+
+    <p data-start="1007.06" data-end="1016.48">I am Oz, the Great and Terrible, spoke the Beast, in a voice that was one great roar. Who are you, and why do you seek me?</p>
+    <p data-start="1007.06" data-end="1016.48">野獸用一個巨大的咆哮聲說：「我是偉大而可怕的奧茲。你是誰，為什麼來找我？」</p>
+
+    <p data-start="1017.24" data-end="1026.24">I am a Woodman, and made of tin. Therefore I have no heart, and cannot love. I pray you to give me a heart that I may be as other men are.</p>
+    <p data-start="1017.24" data-end="1026.24">「我是鐵皮人，由錫製成。因此我沒有心，不能愛。我請求你給我一顆心，讓我可以像其他人一樣。」</p>
+
+    <p data-start="1026.96" data-end="1035.96">Why should I do this? demanded the Beast. Because I ask it, and you alone can grant my request, answered the Woodman.</p>
+    <p data-start="1026.96" data-end="1035.96">「我為什麼要這樣做？」野獸問道。「因為我請求你，而且只有你能滿足我的要求。」鐵皮人回答。</p>
+
+    <p data-start="1037.16" data-end="1048.66">Oz gave a low growl at this, but said, gruffly: If you indeed desire a heart, you must earn it. How? asked the Woodman.</p>
+    <p data-start="1037.16" data-end="1048.66">奧茲低聲咆哮，但粗聲說：「如果你真的渴望一顆心，你必須賺取它。」「怎麼賺取？」鐵皮人問。</p>
+
+    <p data-start="1050.04" data-end="1066.16">Help Dorothy to kill the Wicked Witch of the West, replied the Beast. When the Witch is dead, come to me, and I will then give you the biggest and kindest and most loving heart in all the Land of Oz.</p>
+    <p data-start="1067.42" data-end="1096.40">「幫助桃樂絲殺死西方邪惡女巫，野獸回答。當女巫死後，到我這裡來，我會給你奧茲國最大、最仁慈、最有愛心的心。」</p>
+
+    <p data-start="1067.42" data-end="1096.40">So the Tin Woodman was forced to return sorrowfully to his friends and tell them of the terrible Beast he had seen. They all wondered greatly at the many forms the Great Wizard could take upon himself, and the Lion said: If he is a Beast when I go to see him, I shall roar my loudest, and so frighten him that he will grant all I ask. And if he is the lovely Lady, I shall pretend to spring upon her, and so compel her to do my bidding.</p>
+    <p data-start="1067.42" data-end="1096.40">於是鐵皮人被迫悲傷地回到他的朋友們那裡，告訴他們他見到的可怕野獸。他們對偉大的巫師能變成的多種形態感到非常驚訝，獅子說：「如果我去見他時他是野獸，我會大聲咆哮，把他嚇得滿足我所有的要求。如果他是那位漂亮的女士，我會假裝撲向她，強迫她服從我的命令。」</p>
+
+    <p data-start="1096.56" data-end="1111.28">And if he is the great Head, he will be at my mercy; for I will roll this head all about the room until he promises to give us what we desire. So be of good cheer, my friends, for all will yet be well.</p>
+    <p data-start="1096.56" data-end="1111.28">「如果他是那顆大頭，他將任我擺佈；因為我會把這顆頭在房間裡滾來滾去，直到他答應給我們我們想要的東西。放心吧，我的朋友們，一切都會好的。」</p>
+
+    <p data-start="1112.78" data-end="1119.92">The next morning the soldier with the green whiskers led the Lion to the great Throne Room and bade him enter the presence of Oz.</p>
+    <p data-start="1112.78" data-end="1119.92">第二天早上，長著綠色鬍子的士兵把獅子帶到偉大的王座廳，並讓他進入奧茲的面前。</p>
+
+    <p data-start="1120.74" data-end="1150.12">The Lion at once passed through the door, and glancing around saw, to his surprise, that before the throne was a Ball of Fire, so fierce and glowing he could scarcely bear to gaze upon it. His first thought was that Oz had by accident caught on fire and was burning up; but when he tried to go nearer, the heat was so intense that it singed his whiskers, and he crept back tremblingly to a spot nearer the door.</p>
+    <p data-start="1120.74" data-end="1150.12">獅子立刻穿過門，環顧四周，驚訝地發現王座前有一個火球，如此猛烈和炙熱，他幾乎不敢看它。起初他以為奧茲是意外著火並燒起來了；但當他試圖靠近時，熱度如此強烈，以至於燒焦了他的鬍鬚，他顫抖著退回到門附近的一個地方。</p>
+
+    <p data-start="1150.18" data-end="1157.98">Then a low, quiet voice came from the Ball of Fire, and these were the words it spoke:</p>
+    <p data-start="1150.18" data-end="1157.98">然後一個低沉而安靜的聲音從火球中傳來，說：</p>
+
+    <p data-start="1157.98" data-end="1166.02">I am Oz, the Great and Terrible. Who are you, and why do you seek me?</p>
+    <p data-start="1157.98" data-end="1166.02">「我是偉大而可怕的奧茲。你是誰，為什麼來找我？」</p>
+
+    <p data-start="1166.02" data-end="1179.00">And the Lion answered, I am a Cowardly Lion, afraid of everything. I came to you to beg that you give me courage, so that in reality I may become the King of Beasts, as men call me.</p>
+    <p data-start="1166.02" data-end="1179.00">獅子回答：「我是一隻膽小的獅子，害怕一切。我來找你，請求你給我勇氣，這樣我就能像人們稱呼我的那樣，真正成為百獸之王。」</p>
+
+    <p data-start="1179.70" data-end="1204.28">Why should I give you courage? demanded Oz. Because of all Wizards you are the greatest, and alone have power to grant my request, answered the Lion. The Ball of Fire burned fiercely for a time, and the voice said, Bring me proof that the Wicked Witch is dead, and that moment I will give you courage. But as long as the Witch lives, you must remain a coward.</p>
+    <p data-start="1179.70" data-end="1204.28">「我為什麼要給你勇氣？」奧茲問道。「因為在所有巫師中你是最偉大的，只有你有能力滿足我的請求。」獅子回答。火球猛烈地燃燒了一會兒，聲音說：「帶給我邪惡女巫死了的證據，那一刻我就給你勇氣。但只要女巫活著，你就必須繼續做膽小鬼。」</p>
+
+    <p data-start="1205.70" data-end="1240.60">The Lion was angry at this speech, but could say nothing in reply, and while he stood silently gazing at the Ball of Fire it became so furiously hot that he turned tail and rushed from the room. He was glad to find his friends waiting for him, and told them of his terrible interview with the Wizard. What shall we do now? asked Dorothy sadly. There is only one thing we can do, returned the Lion, and that is to go to the land of the Winkies, seek out the Wicked Witch, and destroy her.</p>
+    <p data-start="1205.70" data-end="1240.60">獅子對這番話感到憤怒，但無言以對，他靜靜地注視著火球，直到火球變得如此猛烈，以至於他轉身跑出了房間。他很高興發現他的朋友們在等他，並告訴他們他和巫師的可怕會面。「我們現在該怎麼辦？」桃樂絲悲傷地問。「我們只能做一件事。」獅子回答，「那就是去尋找溫琪國的邪惡女巫，並摧毀她。」</p>
+
+    <p data-start="1240.76" data-end="1265.44">But suppose we cannot? said the girl. Then I shall never have courage, declared the Lion. And I shall never have brains, added the Scarecrow. And I shall never have a heart, spoke the Tin of Woodman. And I shall never see Aunt Em and Uncle Henry, said Dorothy, beginning to cry.</p>
+    <p data-start="1240.76" data-end="1265.44">「但如果我們做不到呢？」女孩問。「那我就永遠沒有勇氣。」獅子宣稱。「我也將永遠沒有智慧。」稻草人補充道。「我也將永遠沒有心。」鐵皮人說。「而我將永遠無法見到艾姨和亨利叔叔。」桃樂絲說，開始哭了起來。</p>
+
+    <p data-start="1265.54" data-end="1276.92">Be careful! cried the green girl. The tears will fall on your green silk gown and spot it. So Dorothy dried her eyes and said, I suppose we must try it; but I am sure I do not want to kill anybody, even to see Aunt Em again.</p>
+    <p data-start="1265.54" data-end="1276.92">「小心！」綠色女孩喊道。「淚水會滴到你的綠色絲綢裙子上，弄髒它。」於是桃樂絲擦乾了眼淚，說：「我想我們必須嘗試一下；但我確實不想殺任何人，即使是為了再見到艾姨。」</p>
+
+    <p data-start="1278.10" data-end="1289.34">I will go with you; but I'm too much of a coward to kill the Witch, said the Lion. I will go too, declared the Scarecrow; but I shall not be of much help to you, I am such a fool.</p>
+    <p data-start="1278.10" data-end="1289.34">「我會和你們一起去；但我太膽小了，不敢殺女巫。」獅子說。「我也會去。」稻草人宣稱，「但我不會對你們有太大幫助，我實在太傻了。」</p>
+
+    <p data-start="1290.14" data-end="1298.22">I haven't the heart to harm even a Witch, remarked the Tin Woodman; but if you go I certainly shall go with you.</p>
+    <p data-start="1290.14" data-end="1298.22">「我沒有心去傷害甚至是女巫。」鐵皮人說，「但如果你們去，我肯定會和你們一起去。」</p>
+
+    <p data-start="1298.92" data-end="1316.44">Therefore it was decided to start upon their journey the next morning, and the Woodman sharpened his axe on a green grindstone and had all his joints properly oiled. The Scarecrow stuffed himself with fresh straw and Dorothy put new paint on his eyes that he might see better.</p>
+    <p data-start="1298.92" data-end="1316.44">於是他們決定第二天早上出發，鐵皮人把他的斧子磨利，在綠色的磨石上，並將所有的關節都妥善上了油。稻草人填滿了新鮮的稻草，桃樂絲給他的眼睛上了新漆，以便他能更好地看見。</p>
+
+    <p data-start="1316.98" data-end="1341.80">The green girl, who was very kind to them, filled Dorothy's basket with good things to eat, and fastened a little bell around Toto's neck with a green ribbon. They went to bed quite early and slept soundly until daylight, when they were awakened by the crowing of a green cock that lived in the back yard of the Palace, and the cackling of a hen that had laid a green egg.</p></p>
+    <p data-start="1316.98" data-end="1341.80">那位非常友善的綠色女孩為桃樂絲的籃子裝滿了好吃的東西，並用綠色絲帶在托托的脖子上系上了一個小鈴鐺。他們很早就上了床，睡得很香，直到天亮時被一隻綠色的公雞和一隻下了綠色蛋的母雞的鳴叫聲喚醒。</p>
+
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>

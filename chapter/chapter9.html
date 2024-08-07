@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chapter 9</title>
+  <link rel="icon" type="image/png" href="../icon/favicon-16x16.png">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <div id="area">
+    <audio id="audio" controls style="width: 95%; display: none;">
+      <source src="https://static.wixstatic.com/mp3/67c6c6_51c2f4d84fa2410ab66138f88b25e94d.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="progress-bar" id="progressBar">
+      <div class="progress-bar-fill" id="progressBarFill"></div>
+    </div>
+    <div id="button">
+      <button class="button" id="playButton" onclick="playAudio()">play</button>
+      <button class="button" onclick="playPause()">pause</button>
+      <button class="button" onclick="prevSentence()">previous</button>
+      <button class="button" onclick="nextSentence()">next</button>
+      <button class="button" onclick="jumpToFirstSentence()">first</button>
+      <button class="button" onclick="jumpToLastSentence()">last</button>
+      <button id="shortcut">Shortcut: "Space": play/pause; ⬅️ ➡️ ⬆️ ⬇️ </button>
+      <a id="home" href="../index.html">Home</a>
+    </div>
+  </div>
+
+  <div class="transcript-container" id="transcript">
+    <p data-start="12.96" data-end="14.66" style="margin-left: 35%;">Chapter 9: The Queen of the Field mice.</p>
+    <p data-start="12.96" data-end="14.66" style="margin-left: 35%;">第九章：田鼠女王。</p>
+
+    <p data-start="15.94" data-end="24.34">"We cannot be far from the road of yellow brick, now," remarked the Scarecrow, as he stood beside the girl, "for we have come nearly as far as the river carried us away."</p>
+    <p data-start="15.94" data-end="24.34">“我們離黃磚路不遠了，”稻草人站在女孩旁邊說，“因為我們走了差不多和河流帶走我們一樣遠的路。”</p>
+
+    <p data-start="25.08" data-end="41.38">The Tin Woodman was about to reply when he heard a low growl, and turning his head (which worked beautifully on hinges) he saw a strange beast come bounding over the grass toward them.</p>
+    <p data-start="25.08" data-end="41.38">錫人正要回答，突然聽到一聲低吼，轉過頭來（他的頭在鉸鏈上轉動自如），看到一隻奇怪的野獸在草地上跳躍著向他們奔來。</p>
+
+    <p data-start="41.38" data-end="58.46">It was, indeed, a great yellow Wildcat, and the Woodman thought it must be chasing something, for its ears were lying close to its head and its mouth was wide open, showing two rows of ugly teeth, while its red eyes glowed like balls of fire.</p>
+    <p data-start="41.38" data-end="58.46">那確實是一隻巨大的黃色野貓，錫人認為它一定在追趕什麼，因為它的耳朵緊貼著頭部，嘴巴大張，露出兩排醜陋的牙齒，紅色的眼睛像火球一樣發光。</p>
+
+    <p data-start="58.46" data-end="70.66">As it came nearer the Tin Woodman saw that running before the beast was a little gray field mouse, and although he had no heart he knew it was wrong for the Wildcat to try to kill such a pretty, harmless creature.</p>
+    <p data-start="58.46" data-end="70.66">當它靠近時，錫人看到在野獸前面跑著一隻小灰田鼠，雖然他沒有心，但他知道野貓試圖殺死這樣一個漂亮、無害的生物是不對的。</p>
+
+    <p data-start="71.66" data-end="85.28">So the Woodman raised his axe, and as the Wildcat ran by he gave it a quick blow that cut the beast's head clean off from its body, and it rolled over at his feet in two pieces.</p>
+    <p data-start="71.66" data-end="85.28">於是錫人舉起斧頭，當野貓跑過時，他迅速一擊，把野獸的頭從身體上砍了下來，滾到他的腳邊，變成了兩截。</p>
+
+    <p data-start="86.36" data-end="95.34">The field mouse, now that it was freed from its enemy, stopped short; and coming slowly up to the Woodman it said, in a squeaky little voice:</p>
+    <p data-start="86.36" data-end="95.34">田鼠擺脫了敵人後，停了下來，慢慢地走向錫人，用尖細的聲音說道：</p>
+
+    <p data-start="96.06" data-end="99.66">"Oh, thank you! Thank you ever so much for saving my life."</p>
+    <p data-start="96.06" data-end="99.66">“哦，謝謝你！非常感謝你救了我的命。”</p>
+
+    <p data-start="100.30" data-end="111.20">"Don't speak of it, I beg of you," replied the Woodman. "I have no heart, you know, so I am careful to help all those who may need a friend, even if it happens to be only a mouse."</p>
+    <p data-start="100.30" data-end="111.20">“請不要提起這事，”錫人回答說。“你知道，我沒有心，所以我特別願意幫助所有需要朋友的人，即使那只是一隻老鼠。”</p>
+
+    <p data-start="112.12" data-end="120.10">"Only a mouse!" cried the little animal, indignantly. "Why, I am a Queen--the Queen of all the Field Mice!"</p>
+    <p data-start="112.12" data-end="120.10">“只是一隻老鼠！”小動物憤怒地喊道。“什麼，我可是女王——所有田鼠的女王！”</p>
+
+    <p data-start="120.60" data-end="124.02">"Oh, indeed," said the Woodman, making a bow.</p>
+    <p data-start="120.60" data-end="124.02">“哦，真的嗎，”錫人鞠了一躬說。</p>
+
+    <p data-start="124.84" data-end="130.80">"Therefore you have done a great deed, as well as a brave one, in saving my life," added the Queen.</p>
+    <p data-start="124.84" data-end="130.80">“因此，你救了我的命，做了一件偉大的事，也是一件勇敢的事，”女王補充道。</p>
+
+    <p data-start="131.38" data-end="140.88">At that moment several mice were seen running up as fast as their little legs could carry them, and when they saw their Queen they exclaimed:</p>
+    <p data-start="131.38" data-end="140.88">就在這時，有幾隻老鼠拼命跑了過來，當他們看到他們的女王時，他們驚呼道：</p>
+
+    <p data-start="141.54" data-end="153.04">"Oh, your Majesty, we thought you would be killed! How did you manage to escape the great Wildcat?" They all bowed so low to the little Queen that they almost stood upon their heads.</p>
+    <p data-start="141.54" data-end="153.04">“哦，陛下，我們還以為您會被殺呢！您是怎麼逃過那隻大野貓的？”他們都向小女王深深鞠躬，幾乎倒立起來。</p>
+
+    <p data-start="153.94" data-end="167.90">"This funny tin man," she answered, "killed the Wildcat and saved my life. So hereafter you must all serve him, and obey his slightest wish."</p>
+    <p data-start="153.94" data-end="167.90">“這個有趣的錫人，”她回答說，“殺了野貓，救了我的命。所以以後你們都要為他服務，服從他的一切願望。”</p>
+
+    <p data-start="168.50" data-end="183.56">"We will!" cried all the mice, in a shrill chorus. And then they scampered in all directions, for Toto had awakened from his sleep, and seeing all these mice around him he gave one bark of delight and jumped right into the middle of the group.</p>
+    <p data-start="168.50" data-end="183.56">“我們會的！”所有老鼠尖聲齊聲喊道。然後他們四處亂竄，因為托托從睡夢中醒來，看到周圍的這些老鼠，高興地叫了一聲，跳到老鼠群中間。</p>
+
+    <p data-start="183.68" data-end="207.86">Toto had always loved to chase mice when he lived in Kansas, and he saw no harm in it. But the Tin Woodman caught the dog in his arms and held him tight, while he called to the mice, "Come back! Come back! Toto shall not hurt you." At this the Queen of the Mice stuck her head out from underneath a clump of grass and asked, in a timid voice,</p>
+    <p data-start="183.68" data-end="207.86">托托在堪薩斯生活時一直喜歡追趕老鼠，他認為這沒什麼害處。但錫人抓住狗，緊緊抱住他，並對老鼠們喊道：“回來！回來！托托不會傷害你們的。”這時，田鼠女王從一簇草叢下探出頭來，膽怯地問道，</p>
+
+    <p data-start="208.46" data-end="232.98">"Are you sure he will not bite us?" "I will not let him," said the Woodman; "so do not be afraid." One by one the mice came creeping back, and Toto did not bark again, although he tried to get out of the Woodman's arms, and would have bitten him had he not known very well he was made of tin. Finally one of the biggest mice spoke.</p>
+    <p data-start="208.46" data-end="232.98">“你確定他不會咬我們嗎？”“我不會讓他咬你們，”錫人說，“所以別害怕。”老鼠們一個接一個地爬回來，托托沒有再叫，雖然他試圖從錫人的懷裡掙脫出來，如果不是很清楚錫人是鐵做的，他可能會咬錫人。最後，一隻最大的老鼠開口了。</p>
+
+    <p data-start="233.80" data-end="257.28">"Is there anything we can do," it asked, "to repay you for saving the life of our Queen?" "Nothing that I know of," answered the Woodman; but the Scarecrow, who had been trying to think, but could not because his head was stuffed with straw, said, quickly, "Oh, yes; you can save our friend, the Cowardly Lion, who is asleep in the poppy bed."</p>
+    <p data-start="233.80" data-end="257.28">“我們能做點什麼，”它問道，“來報答你救了我們的女王？”“我不知道有什麼，”錫人回答說；但稻草人一直在努力思考，因為他的頭裡塞滿了稻草，他無法思考，但他很快說：“哦，是的；你們可以拯救我們的朋友，膽小的獅子，他在罌粟花田裡睡著了。”</p>
+
+    <p data-start="258.10" data-end="282.32">"A Lion!" cried the little Queen. "Why, he would eat us all up." "Oh, no," declared the Scarecrow; "this Lion is a coward." "Really?" asked the Mouse. "He says so himself," answered the Scarecrow, "and he would never hurt anyone who is our friend. If you will help us to save him I promise that he shall treat you all with kindness."</p>
+    <p data-start="258.10" data-end="282.32">“一隻獅子！”小女王喊道。“天哪，他會把我們都吃掉。”“哦，不會的，”稻草人說，“這隻獅子是個膽小鬼。”“真的嗎？”老鼠問。“他自己這麼說，”稻草人回答，“他永遠不會傷害我們的朋友。如果你們幫助我們救他，我保證他會對你們友好。”</p>
+
+    <p data-start="283.64" data-end="293.70">"Very well," said the Queen, "we trust you. But what shall we do?" "Are there many of these mice which call you Queen and are willing to obey you?"</p>
+    <p data-start="283.64" data-end="293.70">“很好，”女王說，“我們相信你。但我們應該怎麼做？”“有很多老鼠稱你為女王並願意服從你嗎？”</p>
+
+    <p data-start="294.04" data-end="311.60">"Oh, yes; there are thousands," she replied. "Then send for them all to come here as soon as possible, and let each one bring a long piece of string." The Queen turned to the mice that attended her and told them to go at once and get all her people.</p>
+    <p data-start="294.04" data-end="311.60">“哦，是的，有成千上萬隻，”她回答說。“那麼立即召集他們都來這裡，讓每隻老鼠都帶一條長繩子來。”女王轉向侍奉她的老鼠，告訴他們立刻去召集所有她的子民。</p>
+
+    <p data-start="312.38" data-end="345.34">As soon as they heard her orders they ran away in every direction as fast as possible. "Now," said the Scarecrow to the Tin Woodman, "you must go to those trees by the riverside and make a truck that will carry the Lion." So the Woodman went at once to the trees and began to work; and he soon made a truck out of the limbs of trees, from which he chopped away all the leaves and branches. He fastened it together with wooden pegs and made the four wheels out of short pieces of a big tree trunk.</p>
+    <p data-start="312.38" data-end="345.34">他們一聽到命令，就迅速向四面八方跑去。“現在，”稻草人對錫人說，“你必須去河邊的那些樹那裡做一輛能載獅子的車。”於是錫人立刻走到樹旁開始工作；他很快用樹枝做了一輛車，把所有的葉子和樹枝都砍掉。他用木釘把它固定在一起，並用一大段樹幹做了四個輪子。</p>
+
+    <p data-start="345.38" data-end="366.99">So fast and so well did he work that by the time the mice began to arrive the truck was all ready for them. They came from all directions, and there were thousands of them: big mice and little mice and middle-sized mice; and each one brought a piece of string in his mouth.</p>
+    <p data-start="345.38" data-end="366.99">他工作得又快又好，當老鼠們開始到達時，車已經準備好了。老鼠們從四面八方來到這裡，成千上萬：有大老鼠、小老鼠和中等大小的老鼠；每隻老鼠嘴裡都帶著一條繩子。</p>
+
+    <p data-start="367.00" data-end="380.99">It was about this time that Dorothy woke from her long sleep and opened her eyes. She was greatly astonished to find herself lying upon the grass, with thousands of mice standing around and looking at her timidly.</p>
+    <p data-start="367.00" data-end="380.99">就在這時，桃樂絲從長時間的睡眠中醒來，睜開了眼睛。她驚訝地發現自己躺在草地上，周圍站著成千上萬隻老鼠，膽怯地看著她。</p>
+
+    <p data-start="381.00" data-end="394.14">But the Scarecrow told her about everything, and turning to the dignified little Mouse, he said: "Permit me to introduce to you her Majesty, the Queen."</p>
+    <p data-start="381.00" data-end="394.14">稻草人告訴了她一切，然後轉向那隻尊貴的小老鼠，說：“請允許我向您介紹女王陛下。”</p>
+
+    <p data-start="394.30" data-end="400.10">Dorothy nodded gravely and the Queen made a curtsy, after which she became quite friendly with the little girl.</p>
+    <p data-start="394.30" data-end="400.10">桃樂絲鄭重地點了點頭，女王行了個屈膝禮，隨後她和小女孩變得非常友好。</p>
+
+    <p data-start="400.80" data-end="432.99">The Scarecrow and the Woodman now began to fasten the mice to the truck, using the strings they had brought. One end of a string was tied around the neck of each mouse and the other end to the truck. Of course the truck was a thousand times bigger than any of the mice who were to draw it; but when all the mice had been harnessed, they were able to pull it quite easily. Even the Scarecrow and the Tin Woodman could sit on it, and were drawn swiftly by their queer little horses to the place where the Lion lay asleep.</p>
+    <p data-start="400.80" data-end="432.99">稻草人和錫人現在開始用他們帶來的繩子把老鼠拴在車上。一端繩子繫在每隻老鼠的脖子上，另一端繫在車上。當然，車子比拉它的任何一隻老鼠都要大一千倍；但當所有的老鼠都被套上後，它們能夠很輕鬆地拉動它。甚至稻草人和錫人都可以坐在上面，被這些奇特的小馬迅速拉到獅子睡著的地方。</p>
+
+    <p data-start="433.00" data-end="450.74">After a great deal of hard work, for the Lion was heavy, they managed to get him up on the truck. Then the Queen hurriedly gave her people the order to start, for she feared if the mice stayed among the poppies too long they also would fall asleep.</p>
+    <p data-start="433.00" data-end="450.74">經過一番艱苦的努力，因為獅子很重，他們設法把他抬上車。然後女王匆忙下令她的子民開始行動，因為她擔心如果老鼠們在罌粟花叢中呆得太久，它們也會睡著。</p>
+
+    <p data-start="452.04" data-end="477.86">At first the little creatures, many though they were, could hardly stir the heavily loaded truck; but the Woodman and the Scarecrow both pushed from behind, and they got along better. Soon they rolled the Lion out of the poppy bed to the green fields, where he could breathe the sweet, fresh air again, instead of the poisonous scent of the flowers.</p>
+    <p data-start="452.04" data-end="477.86">起初，儘管這些小生物很多，但它們幾乎無法移動這輛裝滿貨物的車；但錫人和稻草人都從後面推著，情況好多了。不久他們把獅子從罌粟花叢中滾到綠色的田野上，在那裡他可以再次呼吸到甜美的新鮮空氣，而不是花朵的毒香。</p>
+
+    <p data-start="477.92" data-end="485.99">Dorothy came to meet them and thanked the little mice warmly for saving her companion from death. She had grown so fond of the big Lion she was glad he had been rescued.</p>
+    <p data-start="477.92" data-end="485.99">桃樂絲來迎接他們，並熱情地感謝小老鼠們救了她的同伴免於死亡。她對這隻大獅子越來越喜愛，很高興他被救了出來。</p>
+
+    <p data-start="486.00" data-end="495.68">Then the mice were unharnessed from the truck and scampered away through the grass to their homes. The Queen of the Mice was the last to leave.</p>
+    <p data-start="486.00" data-end="495.68">然後，老鼠們從車上解下套具，穿過草地飛奔回家。田鼠女王是最後一個離開的。</p>
+
+    <p data-start="496.72" data-end="506.16">"If ever you need us again," she said, "come out into the field and call, and we shall hear you and come to your assistance. Good-bye!"</p>
+    <p data-start="496.72" data-end="506.16">“如果你們再需要我們，”她說，“到田野裡呼叫，我們會聽到並來幫助你們。再見！”</p>
+
+    <p data-start="507.16" data-end="515.99">"Good-bye!" they all answered, and away the Queen ran, while Dorothy held Toto tightly lest he should run after her and frighten her.</p>
+    <p data-start="507.16" data-end="515.99">“再見！”他們都回答，然後女王跑了出去，而桃樂絲緊緊抱著托托，免得他追上去嚇著她。</p>
+
+    <p data-start="516.00" data-end="526.40">After this they sat down beside the Lion until he should awaken; and the Scarecrow brought Dorothy some fruit from a tree near by, which she ate for her dinner.</p>
+    <p data-start="516.00" data-end="526.40">之後，他們坐在獅子旁邊，直到他醒來；稻草人從附近的樹上給桃樂絲帶來了一些水果，她把這些水果當晚餐吃了。</p>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+
+</html>
